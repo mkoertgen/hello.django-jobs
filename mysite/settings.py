@@ -48,7 +48,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.humanize',
     'rest_framework',
-    'configurator.apps.SyncConfig',  # django.apps.apps.is_installed('configurator') == True
+    'jobs.apps.JobsConfig',  # django.apps.apps.is_installed('jobs') == True
 ]
 
 REST_FRAMEWORK = {
@@ -168,10 +168,10 @@ LOGLEVEL = os.environ.get('LOGLEVEL', 'DEBUG' if DEBUG else 'INFO').upper()
 
 
 def formatter():
-  json_format = os.environ.get('LOG_JSON', str(not DEBUG)) == 'True'
-  if json_format:
-    return {'class': 'logstash_formatter.LogstashFormatterV1'}
-  return {'format': '%(asctime)s - %(name)s - %(levelname)s - %(message)s'}
+    json_format = os.environ.get('LOG_JSON', str(not DEBUG)) == 'True'
+    if json_format:
+        return {'class': 'logstash_formatter.LogstashFormatterV1'}
+    return {'format': '%(asctime)s - %(name)s - %(levelname)s - %(message)s'}
 
 
 # logging dictConfig configuration

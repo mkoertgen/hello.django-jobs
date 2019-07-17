@@ -1,0 +1,17 @@
+{% extends "jobs/__base.html" %}
+{% load static from staticfiles %}
+
+{% block content %}
+
+<h1>About</h1>
+<dl>
+  <dt>Commit</dt>
+  <dd><a href="{{git.repository.commits}}/{{git.commit}}" target="_blank">{{ git.commit }}</a></dd>
+</dl>
+
+<dl>
+  <dt>Code Coverage</dt>
+  <dd><a href="{% static 'htmlcov/index.html' %}" target="_blank">Python</a></dd>
+</dl>
+
+{% endblock %}

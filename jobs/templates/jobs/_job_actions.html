@@ -1,0 +1,23 @@
+<div class="btn-group" role="group" aria-label="Actions">
+  <form action="{% url 'jobs' %}" method="post">
+    {% csrf_token %}
+    <input name="job_class" type="hidden" value="{{ job.name }}">
+    <button class="btn btn-info btn-sm" type="submit" title="Retry">
+      <i class="fas fa-redo"></i>
+    </button>
+  </form>
+  {% if job.has_result %}
+  <a href="{{job.result_link}}" target="_blank">
+    <span class="btn btn-primary btn-sm" title="{{job.result_link}}">
+      <i class="fas fa-external-link-alt"></i>
+    </span>
+  </a>
+  {% endif %}
+  <form method="POST" action="{% url 'job-delete' job.id %}">
+      {% csrf_token %}
+    <button type="submit" value="DELETE" class="btn btn-danger btn-sm" title="Delete">
+      <i class="fas fa-trash"></i>
+    </button>
+  </form>
+</a>
+</div>

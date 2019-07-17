@@ -1,0 +1,12 @@
+# dev dependencies (e.g. tests)
+autopep8==1.4.3
+coverage==4.5.2
+isort==4.3.17
+pep8==1.7.1
+pur==5.2.1
+pycodestyle==2.4.0
+pydocstyle==3.0.0
+pylint==2.2.2
+pylint-django==2.0.6
+rope==0.11.0
+typed_ast==1.3.1

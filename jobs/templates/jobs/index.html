@@ -1,0 +1,12 @@
+{% extends "jobs/__base.html" %}
+
+{% block content %}
+
+<h1>{{ APP_TITLE }}</h1>
+
+<ul>
+    <li><a href="{{ app.git }}" target="_blank">Git Repository</a></li>
+    <li><a href="{{ app.wiki }}" target="_blank">Wiki</a></li>
+</ul>
+
+{% endblock %}

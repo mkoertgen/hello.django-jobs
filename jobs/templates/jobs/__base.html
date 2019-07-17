@@ -1,0 +1,50 @@
+{% load static from staticfiles %}
+{% load i18n %}
+{% load bootstrap4 %}
+{% load fontawesome_5 %}
+{% get_current_language as LANGUAGE_CODE %}
+<!DOCTYPE html>
+<html lang={{ LANGUAGE_CODE }}>
+
+<head>
+  <!-- Required meta tags (bootstrap 4) -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="{% static 'favicon.ico' %}"/>
+  {% fontawesome_5_static %}
+  {% block meta_tags %}{% endblock %}
+  {% trans "Monitoring Konfigurator" as APP_TITLE %}
+  <title>
+    {% block title %}{{ APP_TITLE }}{% endblock %}
+  </title>
+  {% block stylesheets %}
+  {% bootstrap_css %}
+  {% endblock %}
+  {% block javascript %}
+  {% bootstrap_javascript jquery='full' %}
+  {% endblock %}
+  {% bootstrap_messages %}
+  {% block extra_head %}{% endblock %}
+</head>
+
+<body>
+  <header>
+    {% include "jobs/_navigation.html" %}
+  </header>
+  <div id="main" role="main">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          {% block content %}
+          {% endblock %}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    {% include "jobs/_footer.html" %}
+  </footer>
+</body>
+
+</html>

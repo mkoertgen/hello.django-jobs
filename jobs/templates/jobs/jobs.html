@@ -1,0 +1,62 @@
+{% extends "jobs/__base.html" %}
+{% load humanize %}
+{% block content %}
+
+<h1>Available Jobs</h1>
+<table class="table">
+  <thead>
+    <tr>
+      <th><i class="fas fa-tasks"></i> Job</th>
+      <th><i class="fas fa-clock"></i> Schedule</th>
+      <th><i class="fas fa-list"></i> Actions</th>
+    </tr>
+  </thead>
+  {% for key, value in jobs.items %}
+  <tr>
+    <td>
+      <p class="font-weight-bold">{{ key }}</p>
+    </td>
+    <td>{{ value.schedule }}</td>
+    <td>
+      <form action="{% url 'jobs' %}" method="post">
+        {% csrf_token %}
+        <input name="job_class" type="hidden" value="{{ key }}">
+        <button class="btn btn-outline-success btn-sm" type="submit" title="Run now">
+          <i class="fas fa-play"></i>
+        </button>
+      </form>
+    </td>
+  </tr>
+  {% endfor %}
+</table>
+
+<hr />
+
+<h1>Executions</h1>
+<!-- TODO pagination: https://docs.djangoproject.com/en/2.2/topics/pagination/ -->
+<table class="table">
+  <thead>
+    <tr>
+      <th><i class="fas fa-tasks"></i> Job</th>
+      <th>Status</th>
+      <th><i class="fas fa-clock"></i>Started</th>
+      <th><i class="fas fa-clock"></i>Duration</th>
+      <th><i class="fas fa-list"></i> Actions</th>
+    </tr>
+  </thead>
+  {% for job in executions %}
+  <tr>
+    <td><a href="{% url 'job' job.id %}">
+        <p class="font-weight-bold">{{ job.job_class }}</p>
+      </a></td>
+    <td><span class="badge badge-pill {{job.badge_class}}">{{ job.status }}</span></td>
+    <td><abbr title="{{job.started}}">{{ job.started|naturaltime }}</abbr></td>
+    <td><abbr title="{{job.duration}}">{{ job.duration|naturaltime }}</abbr></td>
+    <td>
+      {% include 'jobs/_job_actions.html' %}
+    </td>
+  </tr>
+  {% endfor %}
+</table>
+
+{% endblock %}
