@@ -1,0 +1,247 @@
+warning: Cannot check if git requires authentication.
+apiVersion: v1
+items:
+### Source secret
+- apiVersion: v1
+### Image streams
+- apiVersion: image.openshift.io/v1
+  kind: ImageStream
+  metadata:
+    annotations:
+      openshift.io/generated-by: OpenShiftNewApp
+    creationTimestamp: null
+    labels:
+      app: django-jobs
+    name: python
+  spec:
+    lookupPolicy:
+      local: false
+    tags:
+    - annotations:
+        openshift.io/imported-from: python:3.7.2-alpine3.8
+      from:
+        kind: DockerImage
+        name: python:3.7.2-alpine3.8
+      generation: null
+      importPolicy: {}
+      name: 3.7.2-alpine3.8
+      referencePolicy:
+        type: ""
+  status:
+    dockerImageRepository: ""
+- apiVersion: image.openshift.io/v1
+  kind: ImageStream
+  metadata:
+    annotations:
+      openshift.io/generated-by: OpenShiftNewApp
+    creationTimestamp: null
+    labels:
+      app: django-jobs
+    name: django-jobs-docker
+  spec:
+    lookupPolicy:
+      local: false
+  status:
+    dockerImageRepository: ""
+### Docker build
+- apiVersion: build.openshift.io/v1
+  kind: BuildConfig
+  metadata:
+    annotations:
+      openshift.io/generated-by: OpenShiftNewApp
+    creationTimestamp: null
+    labels:
+      app: django-jobs
+    name: django-jobs-docker
+  spec:
+    nodeSelector: null
+    output:
+      to:
+        kind: ImageStreamTag
+        name: django-jobs-docker:latest
+    postCommit: {}
+    resources: {}
+    source:
+      git:
+        ref: master
+        uri: git@github.com:mkoertgen/hello.django-jobs.git
+      sourceSecret:
+        name: project-ssh-key
+      type: Git
+    strategy:
+      dockerStrategy:
+        from:
+          kind: ImageStreamTag
+          name: python:3.7.2-alpine3.8
+      type: Docker
+    triggers:
+    - github:
+        secret: 0RZfV6OY5IeyhvedjzvP
+      type: GitHub
+    - generic:
+        secret: v3b5yyDwVcYJyv229UUv
+      type: Generic
+    - type: ConfigChange
+    - imageChange: {}
+      type: ImageChange
+  status:
+    lastVersion: 0
+### Docker deployment
+- apiVersion: apps.openshift.io/v1
+  kind: DeploymentConfig
+  metadata:
+    annotations:
+      openshift.io/generated-by: OpenShiftNewApp
+    creationTimestamp: null
+    labels:
+      app: django-jobs
+    name: django-jobs-docker
+  spec:
+    replicas: 1
+    selector:
+      app: django-jobs
+      deploymentconfig: django-jobs-docker
+    strategy:
+      resources: {}
+    template:
+      metadata:
+        annotations:
+          openshift.io/generated-by: OpenShiftNewApp
+        creationTimestamp: null
+        labels:
+          app: django-jobs
+          deploymentconfig: django-jobs-docker
+      spec:
+        containers:
+        - image: django-jobs-docker:latest
+          name: django-jobs-docker
+          ports:
+          - containerPort: 8000
+            protocol: TCP
+          livenessProbe:
+            failureThreshold: 3
+            httpGet:
+              path: /
+              port: 8000
+              scheme: HTTP
+            periodSeconds: 10
+            successThreshold: 1
+            timeoutSeconds: 1
+          name: django-jobs-docker
+          ports:
+            - containerPort: 8000
+              protocol: TCP
+          readinessProbe:
+            failureThreshold: 3
+            httpGet:
+              path: /
+              port: 8000
+              scheme: HTTP
+            periodSeconds: 10
+            successThreshold: 1
+            timeoutSeconds: 1
+          resources: {}
+          volumeMounts:
+            - mountPath: /var/django-jobs
+              name: volume-django-jobs
+        volumes:
+          - name: volume-django-jobs
+            persistentVolumeClaim:
+              claimName: jenkins
+    test: false
+    triggers:
+    - type: ConfigChange
+    - imageChangeParams:
+        automatic: true
+        containerNames:
+        - django-jobs-docker
+        from:
+          kind: ImageStreamTag
+          name: django-jobs-docker:latest
+      type: ImageChange
+  status:
+    availableReplicas: 0
+    latestVersion: 0
+    observedGeneration: 0
+    replicas: 0
+    unavailableReplicas: 0
+    updatedReplicas: 0
+- apiVersion: v1
+  kind: Service
+  metadata:
+    annotations:
+      openshift.io/generated-by: OpenShiftNewApp
+    creationTimestamp: null
+    labels:
+      app: django-jobs
+    name: django-jobs-docker
+  spec:
+    ports:
+    - name: 8000-tcp
+      port: 8000
+      protocol: TCP
+      targetPort: 8000
+    selector:
+      app: django-jobs
+      deploymentconfig: django-jobs-docker
+  status:
+    loadBalancer: {}
+### Jenkins build
+- apiVersion: build.openshift.io/v1
+  kind: BuildConfig
+  metadata:
+    annotations:
+      openshift.io/generated-by: OpenShiftNewBuild
+    creationTimestamp: null
+    labels:
+      app: django-jobs
+    name: project-jenkins
+  spec:
+    nodeSelector: null
+    output: {}
+    postCommit: {}
+    resources: {}
+    source:
+      git:
+        ref: master
+        uri: git@github.com:mkoertgen/hello.django-jobs.git
+      sourceSecret:
+        name: project-ssh-key
+      type: Git
+    strategy:
+      jenkinsPipelineStrategy: {}
+      type: JenkinsPipeline
+    triggers:
+    - github:
+        secret: whWfvKN5-Ao_rQAKlaZp
+      type: GitHub
+    - generic:
+        secret: oyr7vvNxawM4d2qVA_eF
+      type: Generic
+    - type: ConfigChange
+  status:
+    lastVersion: 0
+### Route
+- apiVersion: route.openshift.io/v1
+  kind: Route
+  metadata:
+    annotations:
+      openshift.io/host.generated: 'true'
+    labels:
+      app: django-jobs
+    name: django-jobs
+  spec:
+    port:
+      targetPort: 8000-tcp
+    to:
+      kind: Service
+      name: django-jobs-docker
+      weight: 100
+    wildcardPolicy: None
+  status:
+    ingress:
+      - conditions:
+        routerName: router
+        wildcardPolicy: None
+kind: List
+metadata: {}
