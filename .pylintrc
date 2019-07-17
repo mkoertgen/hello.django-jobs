@@ -1,0 +1,17 @@
+# generate a default rcfile: pylint --generate-rcfile
+[MASTER]
+load-plugins=pylint_django
+
+[FORMAT]
+# Manual match with .editorconfig. Sadly, there seems to be no auto-consideration for .editorconfig from pylint.
+# String used as indentation unit. This is usually "    " (4 spaces) or "\t" (1 tab).
+indent-string='    '
+# Note that with indent-size=2 we cannot easily switch off 'E111 indentation is not a multiple of four', cf.:
+# - https://groups.google.com/d/msg/comp.lang.python/BkiEex5RsFs/qeM-oh59qrQJ
+# TBD: So we should probably just stick with indent=4
+
+# Maximum number of characters on a single line.
+max-line-length=100
+
+[MESSAGES CONTROL]
+disable=missing-docstring,bad-continuation
