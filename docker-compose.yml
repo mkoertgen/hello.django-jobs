@@ -13,10 +13,10 @@ x-base: &base
 #########
 
 services:
-  jobs:
+  django:
     <<: *base
     build:
-      context: .
+      context: ./django
     ports: ['8000:8000']
     #command: bash
     environment:
