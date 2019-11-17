@@ -1,5 +1,5 @@
 # build, test, coverage
-FROM python:3.7.2 as build
+FROM python:3.8.0-slim-buster as build
 
 WORKDIR /usr/src/app
 COPY requirements*.txt ./
@@ -11,11 +11,14 @@ ENV INTEGRATION_TESTING 'True'
 # TODO: Fix tests
 # RUN pylint app &&\
 # coverage run manage.py test --exclude-tag=integration
-RUN coverage run manage.py test &&\
-    coverage html -d static/htmlcov
+RUN python manage.py migrate
+RUN python manage.py collectstatic --no-input
+RUN coverage run manage.py test
+RUN coverage html -d static/htmlcov
+RUN echo "PyLint..." && (pylint_runner > pylint-report.txt || true)
 
 # runtime
-FROM python:3.7.2-alpine3.8
+FROM python:3.8.0-alpine3.10
 WORKDIR /usr/src/app
 
 COPY requirements*.txt ./
@@ -23,7 +26,7 @@ RUN pip install -r requirements.txt
 
 COPY . .
 COPY --from=build /usr/src/app/static/ static/
-RUN ./manage.py collectstatic --no-input
+COPY --from=build /usr/src/app/staticfiles/ staticfiles/
 
 # ENV DJANGO_SECRET_KEY ...
 ENV DJANGO_DEBUG False
@@ -36,9 +39,6 @@ ENV CLEANUP_JOB_CRON '0 0 * * 0'
 ENV CLEANUP_JOB_DAYS '7'
 
 ENV DATA_DIR '/var/app'
-RUN mkdir -p ${DATA_DIR} && ./manage.py migrate
-VOLUME ["/var/app"]
-
 EXPOSE 8000
 
 ENTRYPOINT [ "/usr/src/app/docker-entrypoint.sh" ]

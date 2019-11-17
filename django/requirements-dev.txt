@@ -1,12 +1,16 @@
 # dev dependencies (e.g. tests)
+astroid==2.3.3
 autopep8==1.4.4
-coverage==4.5.3
+coverage==4.5.4
 isort==4.3.21
 pep8==1.7.1
 pur==5.2.2
 pycodestyle==2.5.0
-pydocstyle==4.0.0
-pylint==2.3.1
-pylint-django==2.0.11
+pydocstyle==4.0.1
+pylint==2.4.4
+pylint-django==2.0.12
+pylint-plugin-utils==0.6
+pylint-runner==0.5.4
 rope==0.14.0
+six==1.13.0
 typed_ast==1.4.0
