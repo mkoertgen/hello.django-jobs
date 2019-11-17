@@ -25,8 +25,8 @@ COPY requirements*.txt ./
 RUN pip install -r requirements.txt
 
 COPY . .
-COPY --from=build /usr/src/app/static/ static/
 COPY --from=build /usr/src/app/staticfiles/ staticfiles/
+COPY --from=build /usr/src/app/static/ static/
 
 # ENV DJANGO_SECRET_KEY ...
 ENV DJANGO_DEBUG False

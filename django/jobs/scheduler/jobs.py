@@ -1,6 +1,5 @@
 import glob
 import importlib
-import io
 import logging
 import os
 from os.path import basename, dirname, isfile, join
@@ -63,7 +62,7 @@ class BaseJob(object):
                 self.job_model.succeed()
                 self.logger.info('Succeeded.')
             except Exception as e:
-                self.logger.warn("Failed: %s", e)
+                self.logger.warning("Failed: %s", e)
                 self.job_model.fail(e)
             finally:
                 self.logger.info('Stopped (duration: %s)', self.job_model.duration)
