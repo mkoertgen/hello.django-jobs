@@ -1,0 +1,47 @@
+{% extends "_layout.html" %}
+{% block title %}Jobs{% endblock %}
+{% block content %}
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">Jobs</h1>
+      {% for category_name, category in jobs.items() %}
+      <div class="tile is-ancestor" id="{{ category_name }}">
+        <div class="tile is-vertical is-12">
+          <div class="tile">
+            <div class="tile is-parent is-vertical">
+              <article class="tile is-child notification">
+                <p class="title">{{ category.displayName }}</p>
+                <p class="subtitle">{{ category.description }}</p>
+              </article>
+              <!-- wrap around using flex-wrap: https://stackoverflow.com/a/50135159 -->
+              <div class="tile is-parent is-horizontal" style="flex-wrap: wrap;">
+                {% for job in category.playbooks %}
+                <div class="tile is-parent is-3">
+                  <a class="tile is-child notification is-{{ job.get('severity', 'info')}} permission-{{job.get('permission', 'service')}}"
+                    href="{{ url_for('pages.job', category=category_name, permission=job.get('permission', 'service'),name=job.name) }}">
+                    <p class="title has-text-centered">{{ job.displayName }}</p>
+                    <p class="subtitle has-text-centered">{{ job.description }}</p>
+                  </a>
+                </div>
+                {% endfor %}
+                {% for job in category.container %}
+                <div class="tile is-parent is-3">
+                  <a class="tile is-child notification is-{{ job.get('severity', 'info')}}"
+                    href="{{ url_for('pages.job_container', category=category_name, name=job.name) }}">
+                    <p class="title has-text-centered">{{ job.displayName }}</p>
+                    <p class="subtitle has-text-centered">{{ job.description }}</p>
+                  </a>
+                </div>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+
+    </div>
+</section>
+{% endblock %}

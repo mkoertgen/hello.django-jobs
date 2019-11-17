@@ -1,6 +1,6 @@
 # hello.django-jobs
 
-A reusable Django App for scheduled jobs.
+A reusable Django App / Flask blueprint for scheduled jobs.
 
 For more information see [docs/index](docs/index.md).
 

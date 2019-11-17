@@ -30,7 +30,13 @@ services:
       CLEANUP_JOB_CRON: '0 0 * * 0' # weekly, cf.: https://crontab.guru/every-week
       CLEANUP_JOB_DAYS: 7
       DATA_DIR: /var/app
-    #volumes: [ 'jobs:/var/app/' ]
+    volumes: [ 'jobs:/var/app/' ]
+
+  flask:
+    <<: *base
+    build:
+      context: ./flask
+    ports: ['5000:5000']
 
 volumes:
   jobs: {}

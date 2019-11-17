@@ -1,0 +1,20 @@
+<nav class="navbar is-fixed-top is-size-4" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="{{ url_for('pages.index') }}">
+            <img src="{{ url_for('static', filename='favicon.ico') }}" width="30" height="30">
+        </a>
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMain">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <div id="navbarMain" class="navbar-menu">
+        <div class="navbar-start">
+            <a class="navbar-item" href="{{ url_for('pages.jobs') }}">Jobs</a>
+            <a class="navbar-item" href="{{ url_for('pages.api') }}">API</a>
+            <a class="navbar-item" href="{{ url_for('pages.about') }}">Docs</a>
+        </div>
+    </div>
+</nav>

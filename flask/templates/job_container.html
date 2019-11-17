@@ -1,0 +1,110 @@
+{% extends "_layout.html" %}
+{% block title %}Job{% endblock %}
+{% block content %}
+<section class="hero">
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title">{{ job.displayName }}</h1>
+            <h4>{{ job.description }}</h4>
+            <article class="tile notification">
+                <button class="job-aware button is-link is-large"
+                    onClick="startJob('{{ url_for('api.container_up', name=job.name) }}')">
+                    <i class="fas fa-play-circle"></i>&nbsp;Start
+                </button>
+            </article>
+            <article class="tile notification">
+                <textarea id="job_output" class="textarea has-background-dark has-text-light"
+                    placeholder="Starting job..." readonly="true" rows="15" cols="200"
+                    style="min-height:150px"></textarea>
+                </dt>
+            </article>
+            <article class="tile notification">
+                <a class="job-aware button is-link is-large" href="{{ url_for('pages.jobs') }}"><i
+                        class="fas fa-chevron-circle-left"></i>&nbsp;Back</a>
+                </a>
+            </article>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block javascript %}
+<script>
+
+
+    // stream text input, cf.: https://github.com/mdn/dom-examples/blob/master/streams/simple-random-stream/index.html
+    const jobButtons = document.querySelectorAll('.button.job-aware');
+    const jobOutput = document.getElementById('job_output');
+    const decoder = new TextDecoder(); // https://developer.mozilla.org/en-US/docs/Web/API/TextDecoder
+
+    const healthInterval = 1000;
+    let isJobRunning = false;
+    let appConnected = true;
+    let appRecovered = false;
+
+    function handleResponse(result) {
+        text = decoder.decode(result.value);
+        jobOutput.innerHTML += text;
+        jobOutput.scrollTop = jobOutput.scrollHeight;
+        return result
+    }
+
+    function startJob(url) {
+        console.log(url);
+        console.log('job started');
+        isJobRunning = true;
+        jobButtons.forEach(el => el.classList.add("is-loading"));
+        setTimeout(checkApp, healthInterval)
+
+        fetch(url, { method: 'POST' })
+            .then(response => response.body.getReader())
+            .then(reader => {
+                return reader.read().then(function process(result) {
+                    if (result.done) {
+                        //console.log("stream done");
+                        return reader.closed;
+                    }
+                    return reader.read().then(handleResponse).then(process)
+                })
+                    .then(() => {
+                        console.log('job completed (errors?)');
+                        isJobRunning = false;
+                        jobButtons.forEach(el => el.classList.remove("is-loading"));
+                    })
+                    .catch(function (err) {
+                        isJobRunning = false;
+                        console.log('job failed', err);
+                    })
+            });
+    }
+
+    // TODO: we can auto-start a function that continuously checks the backend
+    // for
+    // - informing the user that the app disconnected
+    // - automatic reconnect/reload once the app is back
+    // - or raise an error after a timeout
+    function checkApp() {
+        fetch('/api/health')
+            .then(response => {
+                //console.log(response); // response.ok ?
+
+                appRecovered = !appConnected && response.ok;
+                appConnected = response.ok;
+                console.log('app connected', appConnected);
+
+                if (appRecovered) {
+                    location.reload();
+                    console.log("app recovered (page reloaded)");
+                }
+
+                if (isJobRunning)
+                    setTimeout(checkApp, healthInterval);
+            })
+            .catch(error => {
+                console.log('app down', error);
+                appConnected = false;
+                setTimeout(checkApp, healthInterval);
+            })
+    }
+</script>
+{% endblock %}

@@ -1,0 +1,141 @@
+{% extends "_layout.html" %}
+{% block title %}Job{% endblock %}
+{% block content %}
+<section class="hero">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">{{ job.displayName }}</h1>
+      <h4>{{ job.description }}</h4>
+      <article class="tile notification">
+        <button class="job-aware button is-link is-large"
+          onClick="startJob('{{ url_for('api.playbook', category=category, name=job.name) }}')">
+          <i class="fas fa-play-circle"></i>&nbsp;Start
+        </button>
+      </article>
+      <article class="tile notification">
+        <pre id="job_output" class="container has-background-dark has-text-light is-family-code"
+          style="min-height:350px; max-height:350px;"></pre>
+        <!--
+        <textarea id="job_output" class="textarea has-background-dark has-text-light" placeholder="Starting job..."
+          readonly="true" rows="15" cols="200" style="min-height:150px"></textarea> -->
+      </article>
+      <article class="tile notification">
+        <a class="job-aware button is-link is-large" href="{{ url_for('pages.jobs') }}"><i
+            class="fas fa-chevron-circle-left"></i>&nbsp;Back</a>
+        </a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<div id="job_disconnected" class="modal">
+  <div class="modal-background"></div>
+  <div class="modal-content">
+    <article class="message">
+      <div class="message-header">
+        <p>Disconnected</p>
+      </div>
+      <div class="message-body">
+        <p>Waiting for the app to reconnect...</p>
+        <progress class="progress is-medium is-info" max="100">60%</progress>
+        <p>Page will auto-reload.</p>
+      </div>
+    </article>
+  </div>
+</div>
+
+{% endblock %}
+
+{% block javascript %}
+<script src="{{ url_for('static', filename='js/ansi_up.js') }}" type="text/javascript"></script>
+<script>
+  // stream text input, cf.: https://github.com/mdn/dom-examples/blob/master/streams/simple-random-stream/index.html
+  const jobButtons = document.querySelectorAll('.button.job-aware');
+  const jobOutput = document.getElementById('job_output');
+  const decoder = new TextDecoder(); // https://developer.mozilla.org/en-US/docs/Web/API/TextDecoder
+  const ansi_up = new AnsiUp(); // https://github.com/drudru/ansi_up
+
+  const healthInterval = 1000;
+  let isJobRunning = false;
+  let appConnected = true;
+  let appRecovered = false;
+  const disconnectedModal = document.getElementById('job_disconnected');
+
+  window.onbeforeunload = function () {
+    if (isJobRunning) {
+      return "A job is currently running.";
+    } else {
+      return;
+    }
+  };
+
+  function handleResponse(result) {
+    text = decoder.decode(result.value);
+    jobOutput.innerHTML += ansi_up.ansi_to_html(text);
+    jobOutput.scrollTop = jobOutput.scrollHeight;
+    return result
+  }
+
+  function startJob(url) {
+    console.log('job started');
+    jobOutput.innerHTML = '';
+    isJobRunning = true;
+    jobButtons.forEach(el => el.classList.add("is-loading"));
+    setTimeout(checkApp, healthInterval)
+
+    fetch(url, { method: 'POST' })
+      .then(response => response.body.getReader())
+      .then(reader => {
+        return reader.read().then(function process(result) {
+          if (result.done) {
+            //console.log("stream done");
+            return reader.closed;
+          }
+          return reader.read().then(handleResponse).then(process)
+        })
+          .then(() => {
+            console.log('job completed (errors?)');
+            isJobRunning = false;
+            jobButtons.forEach(el => el.classList.remove("is-loading"));
+          })
+          .catch(function (err) {
+            isJobRunning = false;
+            console.log('job failed', err);
+          })
+      });
+  }
+
+  // TODO: we can auto-start a function that continuously checks the backend
+  // for
+  // - informing the user that the app disconnected
+  // - automatic reconnect/reload once the app is back
+  // - or raise an error after a timeout
+  function checkApp() {
+    fetch('/api/health')
+      .then(response => {
+        //console.log(response); // response.ok ?
+
+        appRecovered = !appConnected && response.ok;
+        appConnected = response.ok;
+        console.log('app connected', appConnected);
+
+        if (appRecovered) {
+          console.log("app recovered");
+          disconnectedModal.classList.remove("is-active")
+          location.reload(); // TODO: Should we really reload?
+        }
+
+        if (isJobRunning)
+          setTimeout(checkApp, healthInterval);
+      })
+      .catch(error => {
+        console.log('app down', error);
+        if (appConnected) {
+          disconnectedModal.classList.add("is-active")
+        }
+        appConnected = false;
+        setTimeout(checkApp, healthInterval);
+      })
+  }
+</script>
+{% endblock %}
