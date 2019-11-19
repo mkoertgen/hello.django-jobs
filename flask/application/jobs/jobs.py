@@ -10,7 +10,7 @@ from apscheduler.schedulers.background import BackgroundScheduler
 from apscheduler.triggers.base import BaseTrigger
 from apscheduler.triggers.cron import CronTrigger
 from apscheduler.jobstores.memory import MemoryJobStore
-from jobs.models import JobModel
+from .job_model import JobModel
 
 
 class LogCapture(object):
@@ -65,7 +65,8 @@ class BaseJob(object):
                 self.logger.warning("Failed: %s", e)
                 self.job_model.fail(e)
             finally:
-                self.logger.info('Stopped (duration: %s)', self.job_model.duration)
+                self.logger.info('Stopped (duration: %s)',
+                                 self.job_model.duration)
                 self.job_model = None
 
     def perform_later(self, *args):
@@ -124,7 +125,8 @@ class Jobs():
         if not cron_tab is None:
             job = Jobs.create(name)
             job.schedule(cron_tab)
-            Jobs.logger.debug("Scheduled job '%s' (schedule '%s')", name, cron_tab)
+            Jobs.logger.debug(
+                "Scheduled job '%s' (schedule '%s')", name, cron_tab)
 
     @staticmethod
     def _discover_jobs():
@@ -133,11 +135,12 @@ class Jobs():
         Jobs.logger.debug('Discovering jobs...')
         for job_module in job_modules:
             job_class_name = inflection.camelize(job_module)
-            module = importlib.import_module(f'jobs.scheduler.{job_module}')
+            module = importlib.import_module(f'application.jobs.{job_module}')
             job_class = getattr(module, job_class_name)
             schedule = getattr(job_class, 'SCHEDULE', None)
             name = job_class.__name__
-            Jobs.logger.debug("Discovered job '%s' (schedule '%s')", name, schedule)
+            Jobs.logger.debug(
+                "Discovered job '%s' (schedule '%s')", name, schedule)
             Jobs.ALL_JOBS[name] = {
                 'class': job_class,
                 'schedule': schedule

@@ -1,8 +1,8 @@
-from django.db import models
-from django.utils import timezone
+from datetime import datetime
+from application import db
 
 
-class JobModel(models.Model):
+class JobModel(db.Model):
     ENQUEUED = u"Enqueued"
     STARTED = u"Started"
     ERROR = u"Error"
@@ -12,16 +12,27 @@ class JobModel(models.Model):
     BADGES = {ERROR: 'badge-danger', SUCCESS: 'badge-success'}
     BADGE_DEFAULT = 'badge-secondary'
 
-    created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True)
+    id = db.Column(db.Integer, primary_key=True)
+    created_at = db.Column(db.DateTime, default=datetime.now)
+    updated_at = db.Column(db.DateTime,
+                           default=datetime.now, onupdate=datetime.now)
 
-    job_class = models.CharField(max_length=200)
-    started = models.DateTimeField(null=True, blank=True)
-    finished = models.DateTimeField(null=True, blank=True)
-    status = models.CharField(max_length=50, default=ENQUEUED, choices=[[x, x] for x in STATES])
-    logs = models.TextField()
+    job_class = db.Column(db.String(200), nullable=False)
+    started = db.Column(db.DateTime)
+    finished = db.Column(db.DateTime)
+    status = db.Column(db.Enum(*STATES), default=ENQUEUED)
+    logs = db.Column(db.Text)
     # What is the maximum length of a URL in different browsers? https://stackoverflow.com/a/417184
-    result_link = models.CharField(max_length=2000, default='', blank=True, null=True)
+    # blank=True, null=True)
+    result_link = db.Column(db.String(2000))
+
+    added = False
+
+    def save(self):
+        if not self.added:
+            db.session.add(self)
+            self.added = True
+        db.session.commit()
 
     @property
     def name(self) -> str:
@@ -30,8 +41,8 @@ class JobModel(models.Model):
     @property
     def duration(self):
         if self.started is None:
-            return None
-        current = self.finished if self.finished else timezone.now()
+            return 0  # None
+        current = self.finished if self.finished else datetime.now()
         return current - self.started
 
     def badge_class(self) -> str:
@@ -44,22 +55,18 @@ class JobModel(models.Model):
         return bool(self.result_link)
 
     def log(self, msg: str, save: bool = True):
-        self.logs += msg
+        self.logs = self.logs + msg if self.logs else msg
         if save:
-            self.save()  # update_fields=['logs'])
+            self.save()
 
     def start(self, *args):
         self.status = JobModel.STARTED
-        self.started = timezone.now()
+        self.started = datetime.now()
 
     def succeed(self):
         self.status = JobModel.SUCCESS
-        self.finished = timezone.now()
+        self.finished = datetime.now()
 
     def fail(self, e: Exception):
         self.status = JobModel.ERROR
-        self.finished = timezone.now()
-
-    def get_absolute_url(self) -> str:
-        from django.urls import reverse
-        return reverse('job', kwargs={'pk': str(self.id)})
+        self.finished = datetime.now()

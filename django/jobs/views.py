@@ -66,7 +66,7 @@ def docs(request):
 class JobList(ListView):
     def get(self, request):
         context = {
-            'jobs': Jobs.ALL,
+            'jobs': Jobs.all(),
             'executions': JobModel.objects.all().order_by('-updated_at')
         }
         return render(request, 'jobs/jobs.html', context)

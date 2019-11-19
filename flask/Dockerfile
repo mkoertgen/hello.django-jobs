@@ -6,6 +6,7 @@ COPY requirements*.txt ./
 RUN pip install -r requirements.txt -r requirements-dev.txt
 
 COPY . .
+RUN flask db upgrade
 # TODO: breaks with `coverage.misc.CoverageException: No data to report.`
 #RUN nosetests --exe -vv -all-modules --collect-only
 RUN nosetests --exe --cover-package=. --with-xunit --with-coverage --cover-xml --cover-tests --cover-inclusive
@@ -31,6 +32,10 @@ COPY requirements.txt ./
 RUN pip install -r requirements.txt
 COPY . .
 
+# cf.: https://askubuntu.com/questions/117359/how-do-i-change-the-timezone-to-utc
+ENV TZ UTC
+
+ENV FLASK_DEBUG '0'
 ENV LOG_LEVEL 'INFO'
 ENV LOG_JSON 'True'
 ENV CLEANUP_JOB_CRON '0 0 * * 0'

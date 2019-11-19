@@ -10,6 +10,14 @@ x-base: &base
   # https://docs.docker.com/compose/compose-file/#restart
   restart: unless-stopped # disable for development
   # when deployed using docker swarm, cf.: https://docs.docker.com/compose/compose-file/#restart_policy
+
+x-common-env: &common_env
+  LOG_LEVEL: 'INFO'
+  LOG_JSON: 'True'
+  CLEANUP_JOB_CRON: '0 0 * * 0' # weekly, cf.: https://crontab.guru/every-week
+  CLEANUP_JOB_DAYS: 7
+  DATA_DIR: ${DATA_DIR:-/var/app}
+
 #########
 
 services:
@@ -20,23 +28,24 @@ services:
     ports: ['8000:8000']
     #command: bash
     environment:
+      <<: *common_env
       DJANGO_DEBUG: 'False'
       #DJANGO_SECRET_KEY: '...'
-      LOG_LEVEL: 'INFO'
-      LOG_JSON: 'True'
       ADMIN_USER: admin
       ADMIN_EMAIL: admin@example.com
       ADMIN_PWD: 123admin
-      CLEANUP_JOB_CRON: '0 0 * * 0' # weekly, cf.: https://crontab.guru/every-week
-      CLEANUP_JOB_DAYS: 7
-      DATA_DIR: /var/app
-    volumes: [ 'jobs:/var/app/' ]
+    volumes: [ 'django_data:${DATA_DIR:-/var/app/}' ]
 
   flask:
     <<: *base
     build:
       context: ./flask
     ports: ['5000:5000']
+    environment:
+      <<: *common_env
+      FLASK_DEBUG: '0'
+    volumes: [ 'flask_data:${DATA_DIR:-/var/app/}' ]
 
 volumes:
-  jobs: {}
+  django_data: {}
+  flask_data: {}

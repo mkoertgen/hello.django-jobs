@@ -1,0 +1,59 @@
+{% extends "__base.html" %}
+{% block title %}Jobs{% endblock %}
+{% block content %}
+
+<h1 class="title">Available Jobs</h1>
+<table class="table">
+  <thead>
+    <tr>
+      <th><i class="fas fa-tasks"></i> Job</th>
+      <th><i class="fas fa-clock"></i> Schedule</th>
+      <th><i class="fas fa-list"></i> Actions</th>
+    </tr>
+  </thead>
+  {% for key, value in jobs.items() %}
+  <tr>
+    <td>
+      <p class="has-text-weight-bold">{{ key }}</p>
+    </td>
+    <td>{{ value.schedule }}</td>
+    <td>
+      <form action="{{ url_for('jobs.run', job_class=key) }}" method="post">
+        <button class="button is-primary is-success is-outlined is-small" type="submit" title="Run now">
+          <i class="fas fa-play"></i>
+        </button>
+      </form>
+    </td>
+  </tr>
+  {% endfor %}
+</table>
+
+<hr />
+<h1 class="title">Executions</h1>
+<!-- TODO pagination -->
+<table class="table">
+  <thead>
+    <tr>
+      <th><i class="fas fa-tasks"></i> Job</th>
+      <th>Status</th>
+      <th><i class="fas fa-clock"></i>Started</th>
+      <th><i class="fas fa-clock"></i>Duration</th>
+      <th><i class="fas fa-list"></i> Actions</th>
+    </tr>
+  </thead>
+  {% for job in executions %}
+  <tr>
+    <td><a href="{{ url_for('jobs.detail', id=job.id) }}">
+        <p class="font-weight-bold">{{ job.job_class }}</p>
+      </a></td>
+    <td><span class="badge badge-pill {{job.badge_class}}">{{ job.status }}</span></td>
+    <td><abbr title="{{job.started}}">{{ job.started }}</abbr></td>
+    <td><abbr title="{{job.duration}}">{{ job.duration }}</abbr></td>
+    <td>
+      {% include '_job_actions.html' %}
+    </td>
+  </tr>
+  {% endfor %}
+</table>
+
+{% endblock %}

@@ -1,0 +1,20 @@
+<div class="field is-grouped" role="group" aria-label="Actions">
+  <form action="{{ url_for('jobs.run', job_class=job.name) }}" method="post">
+    <button class="button is-primary is-success is-small" type="submit" title="Retry">
+      <i class="fas fa-redo"></i>
+    </button>
+  </form>
+  {% if job.has_result %}
+  <a href="{{job.result_link}}" target="_blank">
+    <span class="button is-info is-small" title="{{job.result_link}}">
+      <i class="fas fa-external-link-alt"></i>
+    </span>
+  </a>
+  {% endif %}
+  <form method="POST" action="{{ url_for('jobs.delete', id=job.id) }}">
+    <button type="submit" value="DELETE" class="button is-danger is-small" title="Delete">
+      <i class="fas fa-trash"></i>
+    </button>
+  </form>
+  </a>
+</div>

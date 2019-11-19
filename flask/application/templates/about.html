@@ -1,0 +1,13 @@
+{% extends "__base.html" %}
+{% block title %}About{% endblock %}
+{% block content %}
+<h1 class="title">About</h1>
+<dl>
+  <dt class="has-text-weight-bold">Commit</dt>
+  <dd><a href="{{git.repository.commits}}/{{git.commit}}" target="_blank">{{ git.commit }}</a></dd>
+</dl>
+<dl>
+  <dt class="has-text-weight-bold">Code Coverage</dt>
+  <dd><a href="{{ url_for('static', filename='htmlcov/index.html') }}" target="_blank">Python</a></dd>
+</dl>
+{% endblock %}

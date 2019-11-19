@@ -1,4 +1,4 @@
-<nav class="navbar is-fixed-top is-size-4" aria-label="main navigation">
+<nav class="navbar is-fixed-top" aria-label="main navigation">
     <div class="navbar-brand">
         <a class="navbar-item" href="{{ url_for('pages.index') }}">
             <img src="{{ url_for('static', filename='favicon.ico') }}" width="30" height="30">
@@ -12,8 +12,8 @@
 
     <div id="navbarMain" class="navbar-menu">
         <div class="navbar-start">
-            <a class="navbar-item" href="{{ url_for('pages.jobs') }}">Jobs</a>
-            <a class="navbar-item" href="{{ url_for('pages.api') }}">API</a>
+            <a class="navbar-item" href="{{ url_for('jobs.index') }}">Jobs</a>
+            <a class="navbar-item" href="#">API</a>
             <a class="navbar-item" href="{{ url_for('pages.about') }}">Docs</a>
         </div>
     </div>

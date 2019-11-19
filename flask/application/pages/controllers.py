@@ -1,9 +1,6 @@
 import os
 from flask import Blueprint, render_template
 
-# from api.jobs import Jobs
-
-
 pages = Blueprint('pages', __name__)
 
 REPO_URL = 'https://github.com/mkoertgen/hello.django-jobs'
@@ -28,15 +25,3 @@ def about():
         }
     }
     return render_template('about.html', git=git)
-
-
-@pages.route('/jobs')
-def jobs():
-    # TODO
-    return index()
-
-
-@pages.route('/api')
-def api():
-    # TODO
-    return index()

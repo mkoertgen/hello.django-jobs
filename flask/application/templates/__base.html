@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico')}}">
+  <title>
+    {% block title %}Flask Jobs{% endblock %}
+  </title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bulma.min.css') }}" />
+  <link rel='stylesheet' href="{{ url_for('static', filename='css/fontawesome.all.min.css')}}">
+</head>
+
+<body>
+  <header>
+    {% include "_navigation.html" %}
+  </header>
+
+  <main>
+    <section class="section has-navbar-fixed-top">
+      <div class="container">
+        {% block content %}{% endblock %}
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    {% include "_footer.html" %}
+  </footer>
+</body>
+
+{% block javascript %}{% endblock %}
+
+</html>
