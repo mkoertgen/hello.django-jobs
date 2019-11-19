@@ -268,3 +268,4 @@ public/
 
 # pylint-reports
 pylint-report*.txt
+lint.json

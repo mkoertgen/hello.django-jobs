@@ -1,7 +1,7 @@
 import datetime
 import os
-from .jobs import BaseJob
-from .job_model import JobModel
+from . import BaseJob
+from application.models import JobModel
 
 
 class CleanupJob(BaseJob):

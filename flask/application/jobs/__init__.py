@@ -1,7 +1,6 @@
 import glob
 import importlib
 import logging
-import os
 from os.path import basename, dirname, isfile, join
 
 import inflection
@@ -10,7 +9,7 @@ from apscheduler.schedulers.background import BackgroundScheduler
 from apscheduler.triggers.base import BaseTrigger
 from apscheduler.triggers.cron import CronTrigger
 from apscheduler.jobstores.memory import MemoryJobStore
-from .job_model import JobModel
+from application.models import JobModel
 
 
 class LogCapture(object):
@@ -41,19 +40,12 @@ class BaseJob(object):
     def __init__(self):
         self.name = self.__class__.__name__
         self.logger = logging.getLogger(self.name)
-        self.job_model = None
-        self.__assert_model()
-
-    def __assert_model(self):
-        if self.job_model is None:
-            self.job_model = JobModel(job_class=self.name)
-            self.job_model.save()
+        self.job_model = JobModel(job_class=self.name)
 
     def _run(self, *args):
         raise NotImplementedError
 
     def perform(self, *args):
-        self.__assert_model()
         with LogCapture(self):
             try:
                 self.logger.info("Started with args='%s'", args)
@@ -67,7 +59,6 @@ class BaseJob(object):
             finally:
                 self.logger.info('Stopped (duration: %s)',
                                  self.job_model.duration)
-                self.job_model = None
 
     def perform_later(self, *args):
         return self._enqueue(None, args)

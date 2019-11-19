@@ -2,8 +2,8 @@ import logging
 import os
 from flask import Blueprint, render_template, request
 
-from .jobs import Jobs
-from .job_model import JobModel
+from . import Jobs
+from application.models import JobModel
 
 jobs = Blueprint('jobs', __name__)
 LOGGER = logging.getLogger(__name__)

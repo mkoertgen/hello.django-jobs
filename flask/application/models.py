@@ -26,14 +26,6 @@ class JobModel(db.Model):
     # blank=True, null=True)
     result_link = db.Column(db.String(2000))
 
-    added = False
-
-    def save(self):
-        if not self.added:
-            db.session.add(self)
-            self.added = True
-        db.session.commit()
-
     @property
     def name(self) -> str:
         return self.job_class
@@ -41,7 +33,7 @@ class JobModel(db.Model):
     @property
     def duration(self):
         if self.started is None:
-            return 0  # None
+            return None
         current = self.finished if self.finished else datetime.now()
         return current - self.started
 
@@ -54,10 +46,8 @@ class JobModel(db.Model):
     def has_result(self) -> bool:
         return bool(self.result_link)
 
-    def log(self, msg: str, save: bool = True):
+    def log(self, msg: str):
         self.logs = self.logs + msg if self.logs else msg
-        if save:
-            self.save()
 
     def start(self, *args):
         self.status = JobModel.STARTED
@@ -67,6 +57,6 @@ class JobModel(db.Model):
         self.status = JobModel.SUCCESS
         self.finished = datetime.now()
 
-    def fail(self, e: Exception):
+    def fail(self, _: Exception):
         self.status = JobModel.ERROR
         self.finished = datetime.now()

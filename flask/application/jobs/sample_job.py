@@ -1,6 +1,6 @@
 import random
 import time
-from .jobs import BaseJob
+from . import BaseJob
 
 
 class SampleJob(BaseJob):
