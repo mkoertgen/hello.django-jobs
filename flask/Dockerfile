@@ -9,10 +9,15 @@ COPY . .
 RUN flask db upgrade
 # TODO: breaks with `coverage.misc.CoverageException: No data to report.`
 #RUN nosetests --exe -vv -all-modules --collect-only
-RUN nosetests --exe --cover-package=. --with-xunit --with-coverage --cover-xml --cover-tests --cover-inclusive
+# --cover-xml for sonar
+RUN nosetests --exe --cover-package=. --with-xunit --with-coverage --cover-tests --cover-inclusive\
+    --cover-html --cover-html-dir application/static/cover
+
 # TODO: raise test coverage & enable quality gate
 #  --cover-min-percentage=80
-RUN echo "PyLint..." && (pylint_runner > pylint-report.txt || true)
+#RUN echo "PyLint..." && (pylint_runner > pylint.txt || true)
+RUN echo "PyLint..." && (pylint jobs > pylint.json || true)
+RUN pylint-json2html -f jsonextended -o static/lint/pylint.html pylint.json
 
 # --- analyze
 # FROM newtmitch/sonar-scanner:4.0.0-alpine as analyze
@@ -31,6 +36,7 @@ WORKDIR /usr/src/app
 COPY requirements.txt ./
 RUN pip install -r requirements.txt
 COPY . .
+COPY --from=build /usr/src/app/application/static/ application/static/
 
 # cf.: https://askubuntu.com/questions/117359/how-do-i-change-the-timezone-to-utc
 ENV TZ UTC

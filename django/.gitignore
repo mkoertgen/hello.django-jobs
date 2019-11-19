@@ -1,3 +1,4 @@
+pylint*
 
 # Created by https://www.gitignore.io/api/pycharm,python,django
 # Edit at https://www.gitignore.io/?templates=pycharm,python,django
@@ -260,8 +261,3 @@ fabric.properties
 .venv/
 
 # End of https://www.gitignore.io/api/pycharm,python,django
-
-# ignore VSCode
-.vscode/*
-!.vscode/settings.json
-!.vscode/launch.json

@@ -1,0 +1,5 @@
+cover/*
+!cover/.keep
+
+lint/*
+!/.keep

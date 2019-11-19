@@ -1,4 +1,6 @@
+# pylint-reports
 db.sqlite3
+pylint*
 
 # Created by https://www.gitignore.io/api/node,flask,python,sonarqube
 # Edit at https://www.gitignore.io/?templates=node,flask,python,sonarqube
@@ -265,7 +267,3 @@ public/
 .sonarlint/
 
 # End of https://www.gitignore.io/api/node,flask,python,sonarqube
-
-# pylint-reports
-pylint-report*.txt
-lint.json

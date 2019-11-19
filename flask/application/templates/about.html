@@ -7,7 +7,8 @@
   <dd><a href="{{git.repository.commits}}/{{git.commit}}" target="_blank">{{ git.commit }}</a></dd>
 </dl>
 <dl>
-  <dt class="has-text-weight-bold">Code Coverage</dt>
-  <dd><a href="{{ url_for('static', filename='htmlcov/index.html') }}" target="_blank">Python</a></dd>
+  <dt class="has-text-weight-bold">Code Health</dt>
+  <dd><a href="{{ url_for('static', filename='cover/index.html') }}" target="_blank">Coverage</a></dd>
+  <dd><a href="{{ url_for('static', filename='lint/pylint.html') }}" target="_blank">Static Code Analysis</a></dd>
 </dl>
 {% endblock %}
