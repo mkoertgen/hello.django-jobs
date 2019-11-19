@@ -29,7 +29,8 @@ limit-inference-results=100
 
 # List of plugins (as comma separated values of python module names) to load,
 # usually to register additional checkers.
-load-plugins=pylint_django
+#load-plugins=pylint_django
+load-plugins=pylint_django, pylint_json2html
 
 # Pickle collected data for later comparisons.
 persistent=yes
@@ -44,7 +45,6 @@ suggestion-mode=yes
 # Allow loading of arbitrary C extensions. Extensions are imported into the
 # active Python interpreter and may run arbitrary code.
 unsafe-load-any-extension=no
-
 
 [MESSAGES CONTROL]
 
@@ -307,11 +307,11 @@ expected-line-ending-format=
 ignore-long-lines=^\s*(# )?<?https?://\S+>?$
 
 # Number of spaces of indent required inside a hanging or continued line.
-indent-after-paren=4
+indent-after-paren=2
 
 # String used as indentation unit. This is usually "    " (4 spaces) or "\t" (1
 # tab).
-indent-string='    '
+indent-string='  '
 
 # Maximum number of characters on a single line.
 max-line-length=100
@@ -334,6 +334,9 @@ single-line-class-stmt=no
 # else.
 single-line-if-stmt=no
 
+
+#-----
+output-format=jsonextended
 
 [LOGGING]
 

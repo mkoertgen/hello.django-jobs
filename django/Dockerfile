@@ -15,7 +15,9 @@ RUN python manage.py migrate
 RUN python manage.py collectstatic --no-input
 RUN coverage run manage.py test
 RUN coverage html -d static/htmlcov
-RUN echo "PyLint..." && (pylint_runner > pylint-report.txt || true)
+#RUN echo "PyLint..." && (pylint_runner > pylint-report.txt || true)
+RUN echo "PyLint..." && (pylint jobs > lint.json || true)
+RUN pylint-json2html -f jsonextended -o static/lint/pylint.html lint.json
 
 # runtime
 FROM python:3.8.0-alpine3.10

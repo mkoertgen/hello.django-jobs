@@ -9,6 +9,7 @@ pycodestyle==2.5.0
 pydocstyle==4.0.1
 pylint==2.4.4
 pylint-django==2.0.12
+pylint-json2html==0.1.0
 pylint-plugin-utils==0.6
 pylint-runner==0.5.4
 rope==0.14.0

@@ -1,0 +1,3107 @@
+{
+    "messages": [
+        {
+            "type": "warning",
+            "module": "jobs.apps",
+            "obj": "",
+            "line": 10,
+            "column": 0,
+            "path": "jobs\\apps.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.apps",
+            "obj": "",
+            "line": 11,
+            "column": 0,
+            "path": "jobs\\apps.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.apps",
+            "obj": "",
+            "line": 13,
+            "column": 0,
+            "path": "jobs\\apps.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.apps",
+            "obj": "",
+            "line": 14,
+            "column": 0,
+            "path": "jobs\\apps.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 8 spaces, expected 4",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.apps",
+            "obj": "",
+            "line": 15,
+            "column": 0,
+            "path": "jobs\\apps.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 12 spaces, expected 6",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.apps",
+            "obj": "",
+            "line": 16,
+            "column": 0,
+            "path": "jobs\\apps.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 12 spaces, expected 6",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.apps",
+            "obj": "",
+            "line": 17,
+            "column": 0,
+            "path": "jobs\\apps.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 12 spaces, expected 6",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.apps",
+            "obj": "",
+            "line": 19,
+            "column": 0,
+            "path": "jobs\\apps.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 8 spaces, expected 4",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.apps",
+            "obj": "",
+            "line": 20,
+            "column": 0,
+            "path": "jobs\\apps.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 12 spaces, expected 6",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.apps",
+            "obj": "",
+            "line": 22,
+            "column": 0,
+            "path": "jobs\\apps.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 12 spaces, expected 6",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.apps",
+            "obj": "",
+            "line": 24,
+            "column": 0,
+            "path": "jobs\\apps.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.apps",
+            "obj": "",
+            "line": 25,
+            "column": 0,
+            "path": "jobs\\apps.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.apps",
+            "obj": "",
+            "line": 26,
+            "column": 0,
+            "path": "jobs\\apps.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 8 spaces, expected 4",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.apps",
+            "obj": "",
+            "line": 27,
+            "column": 0,
+            "path": "jobs\\apps.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 8 spaces, expected 4",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.apps",
+            "obj": "",
+            "line": 28,
+            "column": 0,
+            "path": "jobs\\apps.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 8 spaces, expected 4",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.apps",
+            "obj": "",
+            "line": 29,
+            "column": 0,
+            "path": "jobs\\apps.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 12 spaces, expected 6",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.apps",
+            "obj": "",
+            "line": 30,
+            "column": 0,
+            "path": "jobs\\apps.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 8 spaces, expected 4",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.apps",
+            "obj": "",
+            "line": 31,
+            "column": 0,
+            "path": "jobs\\apps.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 12 spaces, expected 6",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.apps",
+            "obj": "",
+            "line": 32,
+            "column": 0,
+            "path": "jobs\\apps.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 12 spaces, expected 6",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.apps",
+            "obj": "",
+            "line": 33,
+            "column": 0,
+            "path": "jobs\\apps.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 12 spaces, expected 6",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.apps",
+            "obj": "",
+            "line": 34,
+            "column": 0,
+            "path": "jobs\\apps.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 12 spaces, expected 6",
+            "message-id": "W0311"
+        },
+        {
+            "type": "convention",
+            "module": "jobs.apps",
+            "obj": "JobsConfig.ready",
+            "line": 16,
+            "column": 12,
+            "path": "jobs\\apps.py",
+            "symbol": "import-outside-toplevel",
+            "message": "Import outside toplevel (jobs.scheduler.jobs)",
+            "message-id": "C0415"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.models",
+            "obj": "",
+            "line": 6,
+            "column": 0,
+            "path": "jobs\\models.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.models",
+            "obj": "",
+            "line": 7,
+            "column": 0,
+            "path": "jobs\\models.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.models",
+            "obj": "",
+            "line": 8,
+            "column": 0,
+            "path": "jobs\\models.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.models",
+            "obj": "",
+            "line": 9,
+            "column": 0,
+            "path": "jobs\\models.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.models",
+            "obj": "",
+            "line": 10,
+            "column": 0,
+            "path": "jobs\\models.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.models",
+            "obj": "",
+            "line": 12,
+            "column": 0,
+            "path": "jobs\\models.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.models",
+            "obj": "",
+            "line": 13,
+            "column": 0,
+            "path": "jobs\\models.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.models",
+            "obj": "",
+            "line": 15,
+            "column": 0,
+            "path": "jobs\\models.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.models",
+            "obj": "",
+            "line": 16,
+            "column": 0,
+            "path": "jobs\\models.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.models",
+            "obj": "",
+            "line": 18,
+            "column": 0,
+            "path": "jobs\\models.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.models",
+            "obj": "",
+            "line": 19,
+            "column": 0,
+            "path": "jobs\\models.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.models",
+            "obj": "",
+            "line": 20,
+            "column": 0,
+            "path": "jobs\\models.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.models",
+            "obj": "",
+            "line": 21,
+            "column": 0,
+            "path": "jobs\\models.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.models",
+            "obj": "",
+            "line": 22,
+            "column": 0,
+            "path": "jobs\\models.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.models",
+            "obj": "",
+            "line": 24,
+            "column": 0,
+            "path": "jobs\\models.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.models",
+            "obj": "",
+            "line": 26,
+            "column": 0,
+            "path": "jobs\\models.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.models",
+            "obj": "",
+            "line": 27,
+            "column": 0,
+            "path": "jobs\\models.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.models",
+            "obj": "",
+            "line": 28,
+            "column": 0,
+            "path": "jobs\\models.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 8 spaces, expected 4",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.models",
+            "obj": "",
+            "line": 30,
+            "column": 0,
+            "path": "jobs\\models.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.models",
+            "obj": "",
+            "line": 31,
+            "column": 0,
+            "path": "jobs\\models.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.models",
+            "obj": "",
+            "line": 32,
+            "column": 0,
+            "path": "jobs\\models.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 8 spaces, expected 4",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.models",
+            "obj": "",
+            "line": 33,
+            "column": 0,
+            "path": "jobs\\models.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 12 spaces, expected 6",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.models",
+            "obj": "",
+            "line": 34,
+            "column": 0,
+            "path": "jobs\\models.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 8 spaces, expected 4",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.models",
+            "obj": "",
+            "line": 35,
+            "column": 0,
+            "path": "jobs\\models.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 8 spaces, expected 4",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.models",
+            "obj": "",
+            "line": 37,
+            "column": 0,
+            "path": "jobs\\models.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.models",
+            "obj": "",
+            "line": 38,
+            "column": 0,
+            "path": "jobs\\models.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 8 spaces, expected 4",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.models",
+            "obj": "",
+            "line": 40,
+            "column": 0,
+            "path": "jobs\\models.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.models",
+            "obj": "",
+            "line": 41,
+            "column": 0,
+            "path": "jobs\\models.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 8 spaces, expected 4",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.models",
+            "obj": "",
+            "line": 43,
+            "column": 0,
+            "path": "jobs\\models.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.models",
+            "obj": "",
+            "line": 44,
+            "column": 0,
+            "path": "jobs\\models.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 8 spaces, expected 4",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.models",
+            "obj": "",
+            "line": 46,
+            "column": 0,
+            "path": "jobs\\models.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.models",
+            "obj": "",
+            "line": 47,
+            "column": 0,
+            "path": "jobs\\models.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 8 spaces, expected 4",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.models",
+            "obj": "",
+            "line": 48,
+            "column": 0,
+            "path": "jobs\\models.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 8 spaces, expected 4",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.models",
+            "obj": "",
+            "line": 49,
+            "column": 0,
+            "path": "jobs\\models.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 12 spaces, expected 6",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.models",
+            "obj": "",
+            "line": 51,
+            "column": 0,
+            "path": "jobs\\models.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.models",
+            "obj": "",
+            "line": 52,
+            "column": 0,
+            "path": "jobs\\models.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 8 spaces, expected 4",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.models",
+            "obj": "",
+            "line": 53,
+            "column": 0,
+            "path": "jobs\\models.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 8 spaces, expected 4",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.models",
+            "obj": "",
+            "line": 55,
+            "column": 0,
+            "path": "jobs\\models.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.models",
+            "obj": "",
+            "line": 56,
+            "column": 0,
+            "path": "jobs\\models.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 8 spaces, expected 4",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.models",
+            "obj": "",
+            "line": 57,
+            "column": 0,
+            "path": "jobs\\models.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 8 spaces, expected 4",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.models",
+            "obj": "",
+            "line": 59,
+            "column": 0,
+            "path": "jobs\\models.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.models",
+            "obj": "",
+            "line": 60,
+            "column": 0,
+            "path": "jobs\\models.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 8 spaces, expected 4",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.models",
+            "obj": "",
+            "line": 61,
+            "column": 0,
+            "path": "jobs\\models.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 8 spaces, expected 4",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.models",
+            "obj": "",
+            "line": 63,
+            "column": 0,
+            "path": "jobs\\models.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.models",
+            "obj": "",
+            "line": 64,
+            "column": 0,
+            "path": "jobs\\models.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 8 spaces, expected 4",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.models",
+            "obj": "",
+            "line": 65,
+            "column": 0,
+            "path": "jobs\\models.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 8 spaces, expected 4",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.models",
+            "obj": "JobModel.start",
+            "line": 51,
+            "column": 0,
+            "path": "jobs\\models.py",
+            "symbol": "unused-argument",
+            "message": "Unused argument 'args'",
+            "message-id": "W0613"
+        },
+        {
+            "type": "convention",
+            "module": "jobs.models",
+            "obj": "JobModel.fail",
+            "line": 59,
+            "column": 4,
+            "path": "jobs\\models.py",
+            "symbol": "invalid-name",
+            "message": "Argument name \"e\" doesn't conform to snake_case naming style",
+            "message-id": "C0103"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.models",
+            "obj": "JobModel.fail",
+            "line": 59,
+            "column": 19,
+            "path": "jobs\\models.py",
+            "symbol": "unused-argument",
+            "message": "Unused argument 'e'",
+            "message-id": "W0613"
+        },
+        {
+            "type": "convention",
+            "module": "jobs.models",
+            "obj": "JobModel.get_absolute_url",
+            "line": 64,
+            "column": 8,
+            "path": "jobs\\models.py",
+            "symbol": "import-outside-toplevel",
+            "message": "Import outside toplevel (django.urls)",
+            "message-id": "C0415"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.tests",
+            "obj": "",
+            "line": 1,
+            "column": 0,
+            "path": "jobs\\tests.py",
+            "symbol": "unused-import",
+            "message": "Unused TestCase imported from django.test",
+            "message-id": "W0611"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.views",
+            "obj": "",
+            "line": 27,
+            "column": 0,
+            "path": "jobs\\views.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.views",
+            "obj": "",
+            "line": 33,
+            "column": 0,
+            "path": "jobs\\views.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.views",
+            "obj": "",
+            "line": 38,
+            "column": 0,
+            "path": "jobs\\views.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.views",
+            "obj": "",
+            "line": 47,
+            "column": 0,
+            "path": "jobs\\views.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.views",
+            "obj": "",
+            "line": 53,
+            "column": 0,
+            "path": "jobs\\views.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.views",
+            "obj": "",
+            "line": 54,
+            "column": 0,
+            "path": "jobs\\views.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.views",
+            "obj": "",
+            "line": 55,
+            "column": 0,
+            "path": "jobs\\views.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 8 spaces, expected 4",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.views",
+            "obj": "",
+            "line": 56,
+            "column": 0,
+            "path": "jobs\\views.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.views",
+            "obj": "",
+            "line": 57,
+            "column": 0,
+            "path": "jobs\\views.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.views",
+            "obj": "",
+            "line": 58,
+            "column": 0,
+            "path": "jobs\\views.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.views",
+            "obj": "",
+            "line": 59,
+            "column": 0,
+            "path": "jobs\\views.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 8 spaces, expected 4",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.views",
+            "obj": "",
+            "line": 60,
+            "column": 0,
+            "path": "jobs\\views.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.views",
+            "obj": "",
+            "line": 63,
+            "column": 0,
+            "path": "jobs\\views.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.views",
+            "obj": "",
+            "line": 67,
+            "column": 0,
+            "path": "jobs\\views.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.views",
+            "obj": "",
+            "line": 68,
+            "column": 0,
+            "path": "jobs\\views.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 8 spaces, expected 4",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.views",
+            "obj": "",
+            "line": 72,
+            "column": 0,
+            "path": "jobs\\views.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 8 spaces, expected 4",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.views",
+            "obj": "",
+            "line": 74,
+            "column": 0,
+            "path": "jobs\\views.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.views",
+            "obj": "",
+            "line": 75,
+            "column": 0,
+            "path": "jobs\\views.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 8 spaces, expected 4",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.views",
+            "obj": "",
+            "line": 76,
+            "column": 0,
+            "path": "jobs\\views.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 8 spaces, expected 4",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.views",
+            "obj": "",
+            "line": 77,
+            "column": 0,
+            "path": "jobs\\views.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 8 spaces, expected 4",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.views",
+            "obj": "",
+            "line": 78,
+            "column": 0,
+            "path": "jobs\\views.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 8 spaces, expected 4",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.views",
+            "obj": "",
+            "line": 79,
+            "column": 0,
+            "path": "jobs\\views.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 8 spaces, expected 4",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.views",
+            "obj": "",
+            "line": 83,
+            "column": 0,
+            "path": "jobs\\views.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.views",
+            "obj": "",
+            "line": 84,
+            "column": 0,
+            "path": "jobs\\views.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.views",
+            "obj": "",
+            "line": 88,
+            "column": 0,
+            "path": "jobs\\views.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.views",
+            "obj": "",
+            "line": 89,
+            "column": 0,
+            "path": "jobs\\views.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.views",
+            "obj": "",
+            "line": 93,
+            "column": 0,
+            "path": "jobs\\views.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.views",
+            "obj": "",
+            "line": 94,
+            "column": 0,
+            "path": "jobs\\views.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.views",
+            "obj": "",
+            "line": 98,
+            "column": 0,
+            "path": "jobs\\views.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.views",
+            "obj": "",
+            "line": 99,
+            "column": 0,
+            "path": "jobs\\views.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.views",
+            "obj": "",
+            "line": 103,
+            "column": 0,
+            "path": "jobs\\views.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.views",
+            "obj": "",
+            "line": 104,
+            "column": 0,
+            "path": "jobs\\views.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "refactor",
+            "module": "jobs.views",
+            "obj": "JobList",
+            "line": 66,
+            "column": 0,
+            "path": "jobs\\views.py",
+            "symbol": "too-many-ancestors",
+            "message": "Too many ancestors (8/7)",
+            "message-id": "R0901"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.views",
+            "obj": "JobList.get",
+            "line": 67,
+            "column": 4,
+            "path": "jobs\\views.py",
+            "symbol": "arguments-differ",
+            "message": "Parameters differ from overridden 'get' method",
+            "message-id": "W0221"
+        },
+        {
+            "type": "refactor",
+            "module": "jobs.views",
+            "obj": "JobDetail",
+            "line": 82,
+            "column": 0,
+            "path": "jobs\\views.py",
+            "symbol": "too-many-ancestors",
+            "message": "Too many ancestors (8/7)",
+            "message-id": "R0901"
+        },
+        {
+            "type": "refactor",
+            "module": "jobs.views",
+            "obj": "JobDelete",
+            "line": 87,
+            "column": 0,
+            "path": "jobs\\views.py",
+            "symbol": "too-many-ancestors",
+            "message": "Too many ancestors (10/7)",
+            "message-id": "R0901"
+        },
+        {
+            "type": "refactor",
+            "module": "jobs.views",
+            "obj": "UserViewSet",
+            "line": 92,
+            "column": 0,
+            "path": "jobs\\views.py",
+            "symbol": "too-many-ancestors",
+            "message": "Too many ancestors (12/7)",
+            "message-id": "R0901"
+        },
+        {
+            "type": "refactor",
+            "module": "jobs.views",
+            "obj": "GroupViewSet",
+            "line": 97,
+            "column": 0,
+            "path": "jobs\\views.py",
+            "symbol": "too-many-ancestors",
+            "message": "Too many ancestors (12/7)",
+            "message-id": "R0901"
+        },
+        {
+            "type": "refactor",
+            "module": "jobs.views",
+            "obj": "JobViewSet",
+            "line": 102,
+            "column": 0,
+            "path": "jobs\\views.py",
+            "symbol": "too-many-ancestors",
+            "message": "Too many ancestors (12/7)",
+            "message-id": "R0901"
+        },
+        {
+            "type": "convention",
+            "module": "jobs.views",
+            "obj": "",
+            "line": 19,
+            "column": 0,
+            "path": "jobs\\views.py",
+            "symbol": "ungrouped-imports",
+            "message": "Imports from package jobs are not grouped",
+            "message-id": "C0412"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.cleanup_job",
+            "obj": "CleanupJob._run",
+            "line": 14,
+            "column": 4,
+            "path": "jobs\\scheduler\\cleanup_job.py",
+            "symbol": "protected-access",
+            "message": "Access to a protected member _raw_delete of a client class",
+            "message-id": "W0212"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 18,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 19,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 8 spaces, expected 4",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 20,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 8 spaces, expected 4",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 21,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 8 spaces, expected 4",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 23,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 8 spaces, expected 4",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 24,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 8 spaces, expected 4",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 26,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 27,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 8 spaces, expected 4",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 29,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 30,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 8 spaces, expected 4",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 32,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 33,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 8 spaces, expected 4",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 35,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 36,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 8 spaces, expected 4",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 37,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 8 spaces, expected 4",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 41,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 42,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 8 spaces, expected 4",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 43,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 8 spaces, expected 4",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 44,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 8 spaces, expected 4",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 45,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 8 spaces, expected 4",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 47,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 48,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 8 spaces, expected 4",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 49,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 12 spaces, expected 6",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 50,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 12 spaces, expected 6",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 52,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 53,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 8 spaces, expected 4",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 55,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 56,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 8 spaces, expected 4",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 57,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 8 spaces, expected 4",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 58,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 12 spaces, expected 6",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 59,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 16 spaces, expected 8",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 60,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 16 spaces, expected 8",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 61,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 16 spaces, expected 8",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 62,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 16 spaces, expected 8",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 63,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 16 spaces, expected 8",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 64,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 12 spaces, expected 6",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 65,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 16 spaces, expected 8",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 66,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 16 spaces, expected 8",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 67,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 12 spaces, expected 6",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 68,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 16 spaces, expected 8",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 69,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 16 spaces, expected 8",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 71,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 72,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 8 spaces, expected 4",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 74,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 75,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 8 spaces, expected 4",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 76,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 8 spaces, expected 4",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 78,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 79,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 8 spaces, expected 4",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 85,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 86,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 8 spaces, expected 4",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 88,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 89,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 8 spaces, expected 4",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 93,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 94,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 95,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 96,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 98,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 99,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 100,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 8 spaces, expected 4",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 102,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 103,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 104,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 8 spaces, expected 4",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 106,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 107,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 108,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 8 spaces, expected 4",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 109,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 12 spaces, expected 6",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 110,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 8 spaces, expected 4",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 111,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 8 spaces, expected 4",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 112,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 8 spaces, expected 4",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 113,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 8 spaces, expected 4",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 114,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 8 spaces, expected 4",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 116,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 117,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 118,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 8 spaces, expected 4",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 120,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 121,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 122,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 8 spaces, expected 4",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 123,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 12 spaces, expected 6",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 124,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 8 spaces, expected 4",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 125,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 12 spaces, expected 6",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 126,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 12 spaces, expected 6",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 127,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 12 spaces, expected 6",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 129,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 130,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 131,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 8 spaces, expected 4",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 132,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 8 spaces, expected 4",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 133,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 8 spaces, expected 4",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 134,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 8 spaces, expected 4",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 135,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 12 spaces, expected 6",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 136,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 12 spaces, expected 6",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 137,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 12 spaces, expected 6",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 138,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 12 spaces, expected 6",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 139,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 12 spaces, expected 6",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 140,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 12 spaces, expected 6",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 141,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 12 spaces, expected 6",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 146,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 147,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 148,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 8 spaces, expected 4",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 149,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 8 spaces, expected 4",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 150,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 12 spaces, expected 6",
+            "message-id": "W0311"
+        },
+        {
+            "type": "refactor",
+            "module": "jobs.scheduler.jobs",
+            "obj": "LogCapture",
+            "line": 16,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "useless-object-inheritance",
+            "message": "Class 'LogCapture' inherits from object, can be safely removed from bases in python3",
+            "message-id": "R0205"
+        },
+        {
+            "type": "refactor",
+            "module": "jobs.scheduler.jobs",
+            "obj": "BaseJob",
+            "line": 40,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "useless-object-inheritance",
+            "message": "Class 'BaseJob' inherits from object, can be safely removed from bases in python3",
+            "message-id": "R0205"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "BaseJob.perform",
+            "line": 64,
+            "column": 19,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "broad-except",
+            "message": "Catching too general exception Exception",
+            "message-id": "W0703"
+        },
+        {
+            "type": "convention",
+            "module": "jobs.scheduler.jobs",
+            "obj": "BaseJob.perform",
+            "line": 64,
+            "column": 12,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "invalid-name",
+            "message": "Variable name \"e\" doesn't conform to snake_case naming style",
+            "message-id": "C0103"
+        },
+        {
+            "type": "convention",
+            "module": "jobs.scheduler.jobs",
+            "obj": "Jobs._schedule_jobs",
+            "line": 149,
+            "column": 20,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "consider-iterating-dictionary",
+            "message": "Consider iterating the dictionary directly instead of calling .keys()",
+            "message-id": "C0201"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.jobs",
+            "obj": "",
+            "line": 4,
+            "column": 0,
+            "path": "jobs\\scheduler\\jobs.py",
+            "symbol": "unused-import",
+            "message": "Unused import os",
+            "message-id": "W0611"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.test_cleanup_job",
+            "obj": "",
+            "line": 8,
+            "column": 0,
+            "path": "jobs\\scheduler\\test_cleanup_job.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 4 spaces, expected 2",
+            "message-id": "W0311"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.test_cleanup_job",
+            "obj": "",
+            "line": 9,
+            "column": 0,
+            "path": "jobs\\scheduler\\test_cleanup_job.py",
+            "symbol": "bad-indentation",
+            "message": "Bad indentation. Found 8 spaces, expected 4",
+            "message-id": "W0311"
+        },
+        {
+            "type": "refactor",
+            "module": "jobs.scheduler.test_cleanup_job",
+            "obj": "TestCleanupJob.test_job",
+            "line": 8,
+            "column": 4,
+            "path": "jobs\\scheduler\\test_cleanup_job.py",
+            "symbol": "no-self-use",
+            "message": "Method could be a function",
+            "message-id": "R0201"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.test_cleanup_job",
+            "obj": "",
+            "line": 1,
+            "column": 0,
+            "path": "jobs\\scheduler\\test_cleanup_job.py",
+            "symbol": "unused-import",
+            "message": "Unused import logging",
+            "message-id": "W0611"
+        },
+        {
+            "type": "warning",
+            "module": "jobs.scheduler.test_cleanup_job",
+            "obj": "",
+            "line": 2,
+            "column": 0,
+            "path": "jobs\\scheduler\\test_cleanup_job.py",
+            "symbol": "unused-import",
+            "message": "Unused MagicMock imported from unittest.mock",
+            "message-id": "W0611"
+        },
+        {
+            "type": "refactor",
+            "module": "jobs.util.__init__",
+            "obj": "",
+            "line": 1,
+            "column": 0,
+            "path": "jobs\\util\\__init__.py",
+            "symbol": "duplicate-code",
+            "message": "Similar lines in 2 files\n==jobs.scheduler.sample_job.disabled:0\n==jobs.scheduler.sample_job:0\nimport random\nimport time\nfrom jobs.scheduler.jobs import BaseJob\n\n\nclass SampleJob(BaseJob):\n  def _run(self, *args):\n    time.sleep(random.randrange(1, 100, 1)/100.)",
+            "message-id": "R0801"
+        }
+    ],
+    "stats": {
+        "by_module": {
+            "jobs": {
+                "statement": 0,
+                "info": 0,
+                "convention": 0,
+                "refactor": 0,
+                "warning": 0,
+                "error": 0,
+                "fatal": 0
+            },
+            "jobs.admin": {
+                "statement": 3,
+                "info": 0,
+                "convention": 0,
+                "refactor": 0,
+                "warning": 0,
+                "error": 0,
+                "fatal": 0
+            },
+            "jobs.apps": {
+                "statement": 25,
+                "info": 0,
+                "convention": 1,
+                "refactor": 0,
+                "warning": 21,
+                "error": 0,
+                "fatal": 0
+            },
+            "jobs.models": {
+                "statement": 47,
+                "info": 0,
+                "convention": 2,
+                "refactor": 0,
+                "warning": 48,
+                "error": 0,
+                "fatal": 0
+            },
+            "jobs.serializers": {
+                "statement": 15,
+                "info": 0,
+                "convention": 0,
+                "refactor": 0,
+                "warning": 0,
+                "error": 0,
+                "fatal": 0
+            },
+            "jobs.tests": {
+                "statement": 1,
+                "info": 0,
+                "convention": 0,
+                "refactor": 0,
+                "warning": 1,
+                "error": 0,
+                "fatal": 0
+            },
+            "jobs.urls": {
+                "statement": 8,
+                "info": 0,
+                "convention": 0,
+                "refactor": 0,
+                "warning": 0,
+                "error": 0,
+                "fatal": 0
+            },
+            "jobs.views": {
+                "statement": 58,
+                "info": 0,
+                "convention": 1,
+                "refactor": 6,
+                "warning": 33,
+                "error": 0,
+                "fatal": 0
+            },
+            "jobs.scheduler.cleanup_job": {
+                "statement": 11,
+                "info": 0,
+                "convention": 0,
+                "refactor": 0,
+                "warning": 1,
+                "error": 0,
+                "fatal": 0
+            },
+            "jobs.scheduler.jobs": {
+                "statement": 108,
+                "info": 0,
+                "convention": 2,
+                "refactor": 2,
+                "warning": 102,
+                "error": 0,
+                "fatal": 0
+            },
+            "jobs.scheduler.sample_job.disabled": {
+                "statement": 6,
+                "info": 0,
+                "convention": 0,
+                "refactor": 0,
+                "warning": 0,
+                "error": 0,
+                "fatal": 0
+            },
+            "jobs.scheduler.sample_job": {
+                "statement": 6,
+                "info": 0,
+                "convention": 0,
+                "refactor": 0,
+                "warning": 0,
+                "error": 0,
+                "fatal": 0
+            },
+            "jobs.scheduler.test_cleanup_job": {
+                "statement": 7,
+                "info": 0,
+                "convention": 0,
+                "refactor": 1,
+                "warning": 4,
+                "error": 0,
+                "fatal": 0
+            },
+            "jobs.scheduler.__init__": {
+                "statement": 0,
+                "info": 0,
+                "convention": 0,
+                "refactor": 0,
+                "warning": 0,
+                "error": 0,
+                "fatal": 0
+            },
+            "jobs.util.file_util": {
+                "statement": 34,
+                "info": 0,
+                "convention": 0,
+                "refactor": 0,
+                "warning": 0,
+                "error": 0,
+                "fatal": 0
+            },
+            "jobs.util.test_base": {
+                "statement": 8,
+                "info": 0,
+                "convention": 0,
+                "refactor": 0,
+                "warning": 0,
+                "error": 0,
+                "fatal": 0
+            },
+            "jobs.util.__init__": {
+                "statement": 0,
+                "info": 0,
+                "convention": 0,
+                "refactor": 1,
+                "warning": 0,
+                "error": 0,
+                "fatal": 0
+            }
+        },
+        "by_msg": {
+            "bad-indentation": 201,
+            "import-outside-toplevel": 2,
+            "unused-argument": 2,
+            "invalid-name": 2,
+            "unused-import": 4,
+            "too-many-ancestors": 6,
+            "arguments-differ": 1,
+            "ungrouped-imports": 1,
+            "protected-access": 1,
+            "useless-object-inheritance": 2,
+            "broad-except": 1,
+            "consider-iterating-dictionary": 1,
+            "no-self-use": 1,
+            "duplicate-code": 1
+        },
+        "info": 0,
+        "convention": 6,
+        "refactor": 10,
+        "warning": 210,
+        "error": 0,
+        "fatal": 0,
+        "module": 17,
+        "function": 3,
+        "method": 50,
+        "class": 24,
+        "badname_module": 0,
+        "badname_class": 0,
+        "badname_function": 0,
+        "badname_method": 0,
+        "badname_attr": 0,
+        "badname_const": 0,
+        "badname_variable": 1,
+        "badname_inlinevar": 0,
+        "badname_argument": 1,
+        "badname_class_attribute": 0,
+        "undocumented_module": 14,
+        "undocumented_function": 3,
+        "undocumented_method": 34,
+        "undocumented_class": 24,
+        "nb_duplicated_lines": 8,
+        "percent_duplicated_lines": 1.5473887814313345,
+        "dependencies": {
+            "django.contrib.admin": [
+                "jobs.admin"
+            ],
+            "jobs.models": [
+                "jobs.admin",
+                "jobs.serializers",
+                "jobs.scheduler.cleanup_job",
+                "jobs.scheduler.jobs",
+                "jobs.views"
+            ],
+            "django.apps": [
+                "jobs.apps"
+            ],
+            "django.contrib.auth": [
+                "jobs.apps"
+            ],
+            "jobs.scheduler.jobs": [
+                "jobs.apps",
+                "jobs.scheduler.cleanup_job",
+                "jobs.scheduler.sample_job",
+                "jobs.views",
+                "jobs.scheduler.sample_job.disabled"
+            ],
+            "django.db.models": [
+                "jobs.models"
+            ],
+            "django.utils.timezone": [
+                "jobs.models"
+            ],
+            "django.urls": [
+                "jobs.urls",
+                "jobs.views",
+                "jobs.models"
+            ],
+            "django.contrib.auth.models": [
+                "jobs.serializers",
+                "jobs.views"
+            ],
+            "rest_framework.serializers": [
+                "jobs.serializers"
+            ],
+            "django.test": [
+                "jobs.util.test_base",
+                "jobs.tests"
+            ],
+            "rest_framework.routers": [
+                "jobs.urls"
+            ],
+            "jobs.views": [
+                "jobs.urls"
+            ],
+            "django.http": [
+                "jobs.views"
+            ],
+            "django.shortcuts": [
+                "jobs.views"
+            ],
+            "django.views.decorators.cache": [
+                "jobs.views"
+            ],
+            "django.views.decorators.http": [
+                "jobs.views"
+            ],
+            "django.views.generic": [
+                "jobs.views"
+            ],
+            "rest_framework.viewsets": [
+                "jobs.views"
+            ],
+            "jobs.serializers": [
+                "jobs.views"
+            ],
+            "mysite.settings": [
+                "jobs.views"
+            ],
+            "jobs.util.file_util": [
+                "jobs.views"
+            ],
+            "inflection": [
+                "jobs.scheduler.jobs"
+            ],
+            "apscheduler.job": [
+                "jobs.scheduler.jobs"
+            ],
+            "apscheduler.schedulers.background": [
+                "jobs.scheduler.jobs"
+            ],
+            "apscheduler.triggers.base": [
+                "jobs.scheduler.jobs"
+            ],
+            "apscheduler.triggers.cron": [
+                "jobs.scheduler.jobs"
+            ],
+            "apscheduler.jobstores.memory": [
+                "jobs.scheduler.jobs"
+            ],
+            "jobs.util.test_base": [
+                "jobs.scheduler.test_cleanup_job"
+            ],
+            "jobs.scheduler.cleanup_job": [
+                "jobs.scheduler.test_cleanup_job"
+            ],
+            "yaml": [
+                "jobs.util.file_util"
+            ]
+        },
+        "cycles": [],
+        "statement": 337
+    },
+    "previous": {
+        "by_module": {
+            "jobs": {
+                "statement": 0,
+                "info": 0,
+                "convention": 0,
+                "refactor": 0,
+                "warning": 0,
+                "error": 0,
+                "fatal": 0
+            },
+            "jobs.admin": {
+                "statement": 3,
+                "info": 0,
+                "convention": 0,
+                "refactor": 0,
+                "warning": 0,
+                "error": 0,
+                "fatal": 0
+            },
+            "jobs.apps": {
+                "statement": 25,
+                "info": 0,
+                "convention": 1,
+                "refactor": 0,
+                "warning": 21,
+                "error": 0,
+                "fatal": 0
+            },
+            "jobs.models": {
+                "statement": 47,
+                "info": 0,
+                "convention": 2,
+                "refactor": 0,
+                "warning": 48,
+                "error": 0,
+                "fatal": 0
+            },
+            "jobs.serializers": {
+                "statement": 15,
+                "info": 0,
+                "convention": 0,
+                "refactor": 0,
+                "warning": 0,
+                "error": 0,
+                "fatal": 0
+            },
+            "jobs.tests": {
+                "statement": 1,
+                "info": 0,
+                "convention": 0,
+                "refactor": 0,
+                "warning": 1,
+                "error": 0,
+                "fatal": 0
+            },
+            "jobs.urls": {
+                "statement": 8,
+                "info": 0,
+                "convention": 0,
+                "refactor": 0,
+                "warning": 0,
+                "error": 0,
+                "fatal": 0
+            },
+            "jobs.views": {
+                "statement": 58,
+                "info": 0,
+                "convention": 1,
+                "refactor": 6,
+                "warning": 33,
+                "error": 0,
+                "fatal": 0
+            },
+            "jobs.scheduler.cleanup_job": {
+                "statement": 11,
+                "info": 0,
+                "convention": 0,
+                "refactor": 0,
+                "warning": 1,
+                "error": 0,
+                "fatal": 0
+            },
+            "jobs.scheduler.jobs": {
+                "statement": 108,
+                "info": 0,
+                "convention": 2,
+                "refactor": 2,
+                "warning": 102,
+                "error": 0,
+                "fatal": 0
+            },
+            "jobs.scheduler.sample_job.disabled": {
+                "statement": 6,
+                "info": 0,
+                "convention": 0,
+                "refactor": 0,
+                "warning": 0,
+                "error": 0,
+                "fatal": 0
+            },
+            "jobs.scheduler.sample_job": {
+                "statement": 6,
+                "info": 0,
+                "convention": 0,
+                "refactor": 0,
+                "warning": 0,
+                "error": 0,
+                "fatal": 0
+            },
+            "jobs.scheduler.test_cleanup_job": {
+                "statement": 7,
+                "info": 0,
+                "convention": 0,
+                "refactor": 1,
+                "warning": 4,
+                "error": 0,
+                "fatal": 0
+            },
+            "jobs.scheduler.__init__": {
+                "statement": 0,
+                "info": 0,
+                "convention": 0,
+                "refactor": 0,
+                "warning": 0,
+                "error": 0,
+                "fatal": 0
+            },
+            "jobs.util.file_util": {
+                "statement": 34,
+                "info": 0,
+                "convention": 0,
+                "refactor": 0,
+                "warning": 0,
+                "error": 0,
+                "fatal": 0
+            },
+            "jobs.util.test_base": {
+                "statement": 8,
+                "info": 0,
+                "convention": 0,
+                "refactor": 0,
+                "warning": 0,
+                "error": 0,
+                "fatal": 0
+            },
+            "jobs.util.__init__": {
+                "statement": 0,
+                "info": 0,
+                "convention": 0,
+                "refactor": 1,
+                "warning": 0,
+                "error": 0,
+                "fatal": 0
+            }
+        },
+        "by_msg": {
+            "bad-indentation": 201,
+            "import-outside-toplevel": 2,
+            "unused-argument": 2,
+            "invalid-name": 2,
+            "unused-import": 4,
+            "too-many-ancestors": 6,
+            "arguments-differ": 1,
+            "ungrouped-imports": 1,
+            "protected-access": 1,
+            "useless-object-inheritance": 2,
+            "broad-except": 1,
+            "consider-iterating-dictionary": 1,
+            "no-self-use": 1,
+            "duplicate-code": 1
+        },
+        "info": 0,
+        "convention": 6,
+        "refactor": 10,
+        "warning": 210,
+        "error": 0,
+        "fatal": 0,
+        "module": 17,
+        "function": 3,
+        "method": 50,
+        "class": 24,
+        "badname_module": 0,
+        "badname_class": 0,
+        "badname_function": 0,
+        "badname_method": 0,
+        "badname_attr": 0,
+        "badname_const": 0,
+        "badname_variable": 1,
+        "badname_inlinevar": 0,
+        "badname_argument": 1,
+        "badname_class_attribute": 0,
+        "undocumented_module": 14,
+        "undocumented_function": 3,
+        "undocumented_method": 34,
+        "undocumented_class": 24,
+        "nb_duplicated_lines": 8,
+        "percent_duplicated_lines": 1.5473887814313345,
+        "dependencies": {
+            "django.contrib.admin": [
+                "jobs.admin"
+            ],
+            "jobs.models": [
+                "jobs.admin",
+                "jobs.serializers",
+                "jobs.scheduler.cleanup_job",
+                "jobs.scheduler.jobs",
+                "jobs.views"
+            ],
+            "django.apps": [
+                "jobs.apps"
+            ],
+            "django.contrib.auth": [
+                "jobs.apps"
+            ],
+            "jobs.scheduler.jobs": [
+                "jobs.apps",
+                "jobs.scheduler.cleanup_job",
+                "jobs.scheduler.sample_job",
+                "jobs.views",
+                "jobs.scheduler.sample_job.disabled"
+            ],
+            "django.db.models": [
+                "jobs.models"
+            ],
+            "django.utils.timezone": [
+                "jobs.models"
+            ],
+            "django.urls": [
+                "jobs.urls",
+                "jobs.models",
+                "jobs.views"
+            ],
+            "django.contrib.auth.models": [
+                "jobs.serializers",
+                "jobs.views"
+            ],
+            "rest_framework.serializers": [
+                "jobs.serializers"
+            ],
+            "django.test": [
+                "jobs.tests",
+                "jobs.util.test_base"
+            ],
+            "rest_framework.routers": [
+                "jobs.urls"
+            ],
+            "jobs.views": [
+                "jobs.urls"
+            ],
+            "django.http": [
+                "jobs.views"
+            ],
+            "django.shortcuts": [
+                "jobs.views"
+            ],
+            "django.views.decorators.cache": [
+                "jobs.views"
+            ],
+            "django.views.decorators.http": [
+                "jobs.views"
+            ],
+            "django.views.generic": [
+                "jobs.views"
+            ],
+            "rest_framework.viewsets": [
+                "jobs.views"
+            ],
+            "jobs.serializers": [
+                "jobs.views"
+            ],
+            "mysite.settings": [
+                "jobs.views"
+            ],
+            "jobs.util.file_util": [
+                "jobs.views"
+            ],
+            "inflection": [
+                "jobs.scheduler.jobs"
+            ],
+            "apscheduler.job": [
+                "jobs.scheduler.jobs"
+            ],
+            "apscheduler.schedulers.background": [
+                "jobs.scheduler.jobs"
+            ],
+            "apscheduler.triggers.base": [
+                "jobs.scheduler.jobs"
+            ],
+            "apscheduler.triggers.cron": [
+                "jobs.scheduler.jobs"
+            ],
+            "apscheduler.jobstores.memory": [
+                "jobs.scheduler.jobs"
+            ],
+            "jobs.util.test_base": [
+                "jobs.scheduler.test_cleanup_job"
+            ],
+            "jobs.scheduler.cleanup_job": [
+                "jobs.scheduler.test_cleanup_job"
+            ],
+            "yaml": [
+                "jobs.util.file_util"
+            ]
+        },
+        "cycles": [],
+        "statement": 337,
+        "global_note": 3.293768545994066
+    }
+}
