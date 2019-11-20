@@ -1,5 +1,6 @@
 {% extends "jobs/__base.html" %}
 {% load humanize %}
+{% load humanize_extras %}
 
 {% block meta_tags %}
 {% if job.is_running %}
@@ -23,13 +24,13 @@
   </dd>
 
   <dt>Duration</dt>
-  <dd>{{job.started}}</dd>
+  <dd><abbr title="{{job.duration}}">{{ job.duration|naturaldelta }}</abbr></dd>
 
   <dt>Created</dt>
-  <dd>{{job.created_at}}</dd>
+  <dd><abbr title="{{job.created_at}}">{{ job.created_at|naturaltime }}</abbr></dd>
 
   <dt>Updated</dd>
-  <dd>{{job.updated_at}}</dd>
+  <dd><abbr title="{{job.updated_at}}">{{ job.updated_at|naturaltime }}</abbr></dd>
 
   <dt>Log</dt>
   <dd><textarea readonly="true" rows="15" cols="120">{{ job.logs }}</textarea></dd>

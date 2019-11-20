@@ -1,3 +1,4 @@
+import uuid
 from django.db import models
 from django.utils import timezone
 
@@ -11,6 +12,9 @@ class JobModel(models.Model):
 
     BADGES = {ERROR: 'badge-danger', SUCCESS: 'badge-success'}
     BADGE_DEFAULT = 'badge-secondary'
+
+    # We want indepence of the server when generating ids
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
 
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
@@ -28,11 +32,11 @@ class JobModel(models.Model):
         return self.job_class
 
     @property
-    def duration(self):
+    def duration(self) -> float:
         if self.started is None:
             return None
         current = self.finished if self.finished else timezone.now()
-        return current - self.started
+        return (current - self.started).total_seconds()
 
     def badge_class(self) -> str:
         return JobModel.BADGES.get(self.status, JobModel.BADGE_DEFAULT)
@@ -62,4 +66,4 @@ class JobModel(models.Model):
 
     def get_absolute_url(self) -> str:
         from django.urls import reverse
-        return reverse('job', kwargs={'pk': str(self.id)})
+        return reverse('job', kwargs={'pk': self.id})

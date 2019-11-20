@@ -47,7 +47,7 @@ class BaseJob(object):
     def __assert_model(self):
         if self.job_model is None:
             self.job_model = JobModel(job_class=self.name)
-            self.job_model.save()
+            # self.job_model.save()
 
     def _run(self, *args):
         raise NotImplementedError

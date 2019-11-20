@@ -1,5 +1,6 @@
 {% extends "jobs/__base.html" %}
 {% load humanize %}
+{% load humanize_extras %}
 {% block content %}
 
 <h1>Available Jobs</h1>
@@ -51,7 +52,7 @@
       </a></td>
     <td><span class="badge badge-pill {{job.badge_class}}">{{ job.status }}</span></td>
     <td><abbr title="{{job.started}}">{{ job.started|naturaltime }}</abbr></td>
-    <td><abbr title="{{job.duration}}">{{ job.duration|naturaltime }}</abbr></td>
+    <td><abbr title="{{job.duration}}">{{ job.duration|naturaldelta }}</abbr></td>
     <td>
       {% include 'jobs/_job_actions.html' %}
     </td>
