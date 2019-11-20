@@ -26,6 +26,11 @@ class JobModel(db.Model):
     # blank=True, null=True)
     result_link = db.Column(db.String(2000))
 
+    def __init__(self, **kwargs):
+        super(JobModel, self).__init__(**kwargs)
+        db.session.add(self)
+        db.session.commit()
+
     @property
     def name(self) -> str:
         return self.job_class
@@ -48,6 +53,8 @@ class JobModel(db.Model):
 
     def log(self, msg: str):
         self.logs = self.logs + msg if self.logs else msg
+        db.session.add(self)
+        db.session.commit()
 
     def start(self, *args):
         self.status = JobModel.STARTED

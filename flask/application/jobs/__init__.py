@@ -46,19 +46,20 @@ class BaseJob(object):
         raise NotImplementedError
 
     def perform(self, *args):
-        with LogCapture(self):
-            try:
-                self.logger.info("Started with args='%s'", args)
-                self.job_model.start(args)
-                self._run(args)
-                self.job_model.succeed()
-                self.logger.info('Succeeded.')
-            except Exception as e:
-                self.logger.warning("Failed: %s", e)
-                self.job_model.fail(e)
-            finally:
-                self.logger.info('Stopped (duration: %s)',
-                                 self.job_model.duration)
+        with Jobs.APP.app_context():
+            with LogCapture(self):
+                try:
+                    self.logger.info("Started with args='%s'", args)
+                    self.job_model.start(args)
+                    self._run(args)
+                    self.job_model.succeed()
+                    self.logger.info('Succeeded.')
+                except Exception as e:
+                    self.logger.warning("Failed: %s", e)
+                    self.job_model.fail(e)
+                finally:
+                    self.logger.info('Stopped (duration: %s)',
+                                     self.job_model.duration)
 
     def perform_later(self, *args):
         return self._enqueue(None, args)
@@ -86,6 +87,8 @@ class Jobs():
     scheduler = BackgroundScheduler()
     started = False
     ALL_JOBS = {}
+    # Flask SQLAlchemy hack!
+    APP = None
 
     @staticmethod
     def all():
@@ -96,14 +99,16 @@ class Jobs():
         return Jobs.all()[name]
 
     @staticmethod
-    def start():
+    def start(app):
         if Jobs.started:
             raise ValueError('Already started')
-        Jobs.scheduler.add_jobstore(MemoryJobStore())
-        Jobs._discover_jobs()
-        Jobs._schedule_jobs()
-        Jobs.scheduler.start()
-        Jobs.started = True
+        Jobs.APP = app
+        with app.app_context():
+            Jobs.scheduler.add_jobstore(MemoryJobStore())
+            Jobs._discover_jobs()
+            Jobs._schedule_jobs()
+            Jobs.scheduler.start()
+            Jobs.started = True
 
     @staticmethod
     def create(name: str) -> BaseJob:

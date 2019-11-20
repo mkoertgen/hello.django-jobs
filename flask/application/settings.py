@@ -12,6 +12,8 @@ DATA_DIR = os.environ.get('DATA_DIR', BASE_DIR)
 
 SQLALCHEMY_TRACK_MODIFICATIONS = False
 SQLALCHEMY_DATABASE_URI = f"sqlite:///{os.path.join(DATA_DIR, 'db.sqlite3')}"
+# disable pooling bc. of threading issues, cf.: https://docs.sqlalchemy.org/en/13/errors.html#error-bhk3
+#SQLALCHEMY_POOL_SIZE = 0
 
 #### Logging ##############################################################
 # Docker, 12x factor app:

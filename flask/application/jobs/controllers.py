@@ -1,6 +1,6 @@
 import logging
 import os
-from flask import Blueprint, render_template, request
+from flask import Blueprint, redirect, render_template, request, url_for
 
 from . import Jobs
 from application.models import JobModel
@@ -18,7 +18,6 @@ def index():
         order_by(JobModel.updated_at.desc()).\
         paginate(page, page_size, False).\
         items
-    LOGGER.info("Executions %s", executions)
 
     context = {
         'jobs': Jobs.all(),
@@ -38,7 +37,7 @@ def run(job_class: str):
     LOGGER.info("Scheduling '%s'...", job_class)
     job = Jobs.create(job_class)
     job.perform_later()
-    return detail(job.job_model.id)
+    return redirect(url_for('jobs.detail', id=job.job_model.id))
 
 
 @jobs.route('/<id>/delete', methods=['POST', 'DELETE'])
