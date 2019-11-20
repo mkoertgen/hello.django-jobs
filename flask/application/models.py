@@ -1,5 +1,7 @@
+import uuid
 from datetime import datetime
-from application import db
+from contextlib import contextmanager
+from .db import db, session_scope
 
 
 class JobModel(db.Model):
@@ -8,18 +10,19 @@ class JobModel(db.Model):
     ERROR = u"Error"
     SUCCESS = u"Executed"
     STATES = [ENQUEUED, STARTED, ERROR, SUCCESS]
+    # bulma.io, cf.: https://bulma.io/documentation/elements/tag/#colors
+    BADGES = {ERROR: 'is-danger', SUCCESS: 'is-success'}
+    BADGE_DEFAULT = 'is-info'
 
-    BADGES = {ERROR: 'badge-danger', SUCCESS: 'badge-success'}
-    BADGE_DEFAULT = 'badge-secondary'
+    #id = db.Column(db.Integer, primary_key=True)
+    # We want indepence of the server when generating ids
+    id = db.Column(db.String(36), primary_key=True)
 
-    id = db.Column(db.Integer, primary_key=True)
     created_at = db.Column(db.DateTime, default=datetime.now)
     updated_at = db.Column(db.DateTime,
                            default=datetime.now, onupdate=datetime.now)
 
     job_class = db.Column(db.String(200), nullable=False)
-    started = db.Column(db.DateTime)
-    finished = db.Column(db.DateTime)
     status = db.Column(db.Enum(*STATES), default=ENQUEUED)
     logs = db.Column(db.Text)
     # What is the maximum length of a URL in different browsers? https://stackoverflow.com/a/417184
@@ -28,6 +31,11 @@ class JobModel(db.Model):
 
     def __init__(self, **kwargs):
         super(JobModel, self).__init__(**kwargs)
+        self.id = str(uuid.uuid4())
+        self.logs = ''
+        self.result_link = None
+        self.status = JobModel.ENQUEUED
+        self.session = None
         db.session.add(self)
         db.session.commit()
 
@@ -36,34 +44,46 @@ class JobModel(db.Model):
         return self.job_class
 
     @property
-    def duration(self):
-        if self.started is None:
-            return None
-        current = self.finished if self.finished else datetime.now()
-        return current - self.started
+    def duration(self) -> float:
+        current = datetime.now() if self.is_running else self.updated_at
+        return current - self.created_at
 
+    @property
     def badge_class(self) -> str:
         return JobModel.BADGES.get(self.status, JobModel.BADGE_DEFAULT)
 
+    @property
     def is_running(self) -> bool:
         return not self.status in [JobModel.ERROR, JobModel.SUCCESS]
 
+    @property
     def has_result(self) -> bool:
         return bool(self.result_link)
 
-    def log(self, msg: str):
-        self.logs = self.logs + msg if self.logs else msg
-        db.session.add(self)
-        db.session.commit()
+    def log(self, msg: str, save: bool = True):
+        if self.session is None:
+            return
+        self.logs += msg
+        if save:
+            self.save()
 
-    def start(self, *args):
-        self.status = JobModel.STARTED
-        self.started = datetime.now()
+    @contextmanager
+    def start(self, app, *args):
+        with app.app_context() as ctx, session_scope() as session:
+            self.session = session
+            self.status = JobModel.STARTED
+            self.save()
+            yield self.session
+            self.save()
+            self.session = None
+
+    def save(self):
+        self.updated_at = datetime.now()
+        self.session.merge(self)
+        self.session.commit()
 
     def succeed(self):
         self.status = JobModel.SUCCESS
-        self.finished = datetime.now()
 
     def fail(self, _: Exception):
         self.status = JobModel.ERROR
-        self.finished = datetime.now()

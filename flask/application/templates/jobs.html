@@ -34,9 +34,9 @@
 <table class="table">
   <thead>
     <tr>
-      <th><i class="fas fa-tasks"></i> Job</th>
+      <th><i class="fas fa-tasks"></i>Job</th>
       <th>Status</th>
-      <th><i class="fas fa-clock"></i>Started</th>
+      <th><i class="fas fa-clock"></i>Created</th>
       <th><i class="fas fa-clock"></i>Duration</th>
       <th><i class="fas fa-list"></i> Actions</th>
     </tr>
@@ -46,9 +46,9 @@
     <td><a href="{{ url_for('jobs.detail', id=job.id) }}">
         <p class="font-weight-bold">{{ job.job_class }}</p>
       </a></td>
-    <td><span class="badge badge-pill {{job.badge_class}}">{{ job.status }}</span></td>
-    <td><abbr title="{{job.started}}">{{ job.started }}</abbr></td>
-    <td><abbr title="{{job.duration}}">{{ job.duration }}</abbr></td>
+    <td><span class="tag {{job.badge_class}}">{{ job.status }}</span></td>
+    <td><abbr title="{{ job.created_at }}">{{ job.created_at | humanize() }}</abbr></td>
+    <td><abbr title="{{ job.duration }}">{{ job.duration | humanize('naturaldelta') }}</abbr></td>
     <td>
       {% include '_job_actions.html' %}
     </td>

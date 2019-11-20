@@ -18,17 +18,17 @@
 
   <dt>Status</dt>
   <dd>
-    <span class="badge badge-pill {{job.badge_class}}">{{ job.status }}</span>
+    <span class="tag {{ job.badge_class }}">{{ job.status }}</span>
   </dd>
 
   <dt>Duration</dt>
-  <dd>{{job.started}}</dd>
+  <dd><abbr title="{{ job.duration }}">{{ job.duration | humanize('naturaldelta') }}</abbr></dd>
 
   <dt>Created</dt>
-  <dd>{{job.created_at}}</dd>
+  <dd><abbr title="{{ job.created_at }}">{{ job.created_at | humanize() }}</abbr></dd>
 
   <dt>Updated</dd>
-  <dd>{{job.updated_at}}</dd>
+  <dd><abbr title="{{ job.updated_at }}">{{ job.updated_at | humanize() }}</abbr></dd>
 
   <dt>Log</dt>
   <dd><textarea readonly="true" rows="15" cols="120">{{ job.logs }}</textarea></dd>

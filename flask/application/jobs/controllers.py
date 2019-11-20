@@ -2,7 +2,8 @@ import logging
 import os
 from flask import Blueprint, redirect, render_template, request, url_for
 
-from . import Jobs
+from application.db import db
+from .jobs import Jobs
 from application.models import JobModel
 
 jobs = Blueprint('jobs', __name__)
@@ -42,6 +43,6 @@ def run(job_class: str):
 
 @jobs.route('/<id>/delete', methods=['POST', 'DELETE'])
 def delete(id: str):
-    JobModel.query.filter_by(id=id).delete()
-    # TODO: commit
-    return index()
+    job_model = JobModel.query.filter_by(id=id).delete()
+    db.session.commit()
+    return redirect(url_for('jobs.index'))

@@ -4,17 +4,16 @@
       <i class="fas fa-redo"></i>
     </button>
   </form>
-  {% if job.has_result %}
-  <a href="{{job.result_link}}" target="_blank">
-    <span class="button is-info is-small" title="{{job.result_link}}">
-      <i class="fas fa-external-link-alt"></i>
-    </span>
-  </a>
-  {% endif %}
   <form method="POST" action="{{ url_for('jobs.delete', id=job.id) }}">
     <button type="submit" value="DELETE" class="button is-danger is-small" title="Delete">
       <i class="fas fa-trash"></i>
     </button>
   </form>
+  {% if job.has_result %}
+  <a href="{{ job.result_link }}" target="_blank">
+    <span class="button is-info is-small" title="{{ job.result_link }}">
+      <i class="fas fa-external-link-alt"></i>
+    </span>
   </a>
+  {% endif %}
 </div>

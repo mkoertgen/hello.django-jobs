@@ -45,15 +45,18 @@ class BaseJob(object):
     def _run(self, *args):
         raise NotImplementedError
 
+    @property
+    def session(self):
+        return self.job_model.session
+
     def perform(self, *args):
-        with Jobs.APP.app_context():
+        with self.job_model.start(Jobs.APP, args):
             with LogCapture(self):
                 try:
                     self.logger.info("Started with args='%s'", args)
-                    self.job_model.start(args)
                     self._run(args)
-                    self.job_model.succeed()
                     self.logger.info('Succeeded.')
+                    self.job_model.succeed()
                 except Exception as e:
                     self.logger.warning("Failed: %s", e)
                     self.job_model.fail(e)
@@ -126,12 +129,13 @@ class Jobs():
 
     @staticmethod
     def _discover_jobs():
-        modules = glob.glob(join(dirname(__file__), '[!test_]*_job.py'))
+        modules = glob.glob(join(dirname(__file__), '*_job.py'))
         job_modules = [basename(f)[:-3] for f in modules if isfile(f)]
         Jobs.logger.debug('Discovering jobs...')
         for job_module in job_modules:
             job_class_name = inflection.camelize(job_module)
-            module = importlib.import_module(f'application.jobs.{job_module}')
+            module = importlib.import_module(
+                f'application.jobs.{job_module}')
             job_class = getattr(module, job_class_name)
             schedule = getattr(job_class, 'SCHEDULE', None)
             name = job_class.__name__
