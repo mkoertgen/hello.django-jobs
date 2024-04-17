@@ -11,7 +11,7 @@ djangorestframework==3.11.2
 # breaks on alpine, workaround is to downgrade gunicorn to <20 or add libc, cf. 
 # - https://stackoverflow.com/questions/58786695/how-to-address-oserror-libc-not-found-raised-on-gunicorn-exec-of-flask-app-in
 #gunicorn==20.0.0
-gunicorn==19.9.0
+gunicorn==22.0.0
 #--------------
 humanize==0.5.1
 idna==2.8
