@@ -7,7 +7,7 @@ Flask-SQLAlchemy==2.4.1
 # breaks on alpine, workaround is to downgrade gunicorn to <20 or add libc, cf. 
 # - https://stackoverflow.com/questions/58786695/how-to-address-oserror-libc-not-found-raised-on-gunicorn-exec-of-flask-app-in
 #gunicorn==20.0.0
-gunicorn==19.9.0
+gunicorn==22.0.0
 #--------------
 inflection==0.3.1
 logstash_formatter==0.5.17
