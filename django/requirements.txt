@@ -6,7 +6,7 @@ Django==3.2.25
 django-bootstrap4==1.0.1
 django-fontawesome-5==1.0.16
 django-humanize==0.1.2
-djangorestframework==3.11.2
+djangorestframework==3.15.2
 #--------------
 # breaks on alpine, workaround is to downgrade gunicorn to <20 or add libc, cf. 
 # - https://stackoverflow.com/questions/58786695/how-to-address-oserror-libc-not-found-raised-on-gunicorn-exec-of-flask-app-in
