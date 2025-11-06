@@ -2,7 +2,7 @@ APScheduler==3.6.3
 certifi==2024.7.4
 chardet==3.0.4
 decorator==4.4.1
-Django==4.2.22
+Django==4.2.26
 django-bootstrap4==1.0.1
 django-fontawesome-5==1.0.16
 django-humanize==0.1.2
